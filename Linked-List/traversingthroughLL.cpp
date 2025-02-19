@@ -29,6 +29,9 @@ int main(){
         curr= curr->next;
     }
 
+
+    //MANDATORY ->
+
     //Clean up after the usage of the linked list (deleting the nodes)
     // Node *temp = head;
     // while(temp!=NULL){
