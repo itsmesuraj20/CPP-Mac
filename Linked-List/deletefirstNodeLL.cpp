@@ -5,8 +5,10 @@ using namespace std;
 //Node Class for LinkedList 
 class Node{
     public:
+
     int data;
     Node* next;
+    
     Node(int x){
         data = x;
         next = NULL;
@@ -15,6 +17,7 @@ class Node{
 
 //Function to delete first node of LinkedList
 Node* deleteFirstNode(Node *head){
+
     if(head == NULL) return NULL;
 
     else{
