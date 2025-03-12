@@ -1,0 +1,2 @@
+- Delete the last node 
+    (cur->next->next != nullptr)
