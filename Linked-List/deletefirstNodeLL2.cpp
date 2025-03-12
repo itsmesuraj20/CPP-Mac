@@ -23,6 +23,7 @@
         }
 
         delete curr->next;
+        curr->next =nullptr;
         return head;
      }
 
