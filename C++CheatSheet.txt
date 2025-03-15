@@ -1,4 +1,4 @@
 C++ Cheat Sheet- 
 
 Topic Most Important for HFT -
-Danging Pointer & Nulifying it .
+Danging Pointer & Nullifying it .
