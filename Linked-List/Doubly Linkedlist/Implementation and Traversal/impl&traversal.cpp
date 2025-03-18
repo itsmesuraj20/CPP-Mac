@@ -25,6 +25,10 @@ int main(){
     temp1->next = temp2;
     temp2->prev = temp1;
 
+    while(head != nullptr){
+        cout<<head->data<<" ";
+        
+    }
 
     return 0;
     
