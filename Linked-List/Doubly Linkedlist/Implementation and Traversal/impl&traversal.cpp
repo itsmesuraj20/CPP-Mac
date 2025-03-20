@@ -27,7 +27,7 @@ int main(){
 
     while(head != nullptr){
         cout<<head->data<<" ";
-        
+        head = head->next;
     }
 
     return 0;
