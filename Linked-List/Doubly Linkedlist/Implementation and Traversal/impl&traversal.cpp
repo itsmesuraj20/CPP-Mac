@@ -20,15 +20,8 @@ int main(){
 
     head->next = temp1;
     temp1->prev = head;
-
-
     temp1->next = temp2;
     temp2->prev = temp1;
-
-    while(head != nullptr){
-        cout<<head->data<<" ";
-        head = head->next;
-    }
 
     return 0;
     
