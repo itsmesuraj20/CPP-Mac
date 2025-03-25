@@ -1,20 +1,23 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-class Node {
+class Node
+{
 public:
     int data;
     Node *next;
     Node *prev;
-    
-    Node(int data) {
+
+    Node(int data)
+    {
         this->data = data;
         next = nullptr;
         prev = nullptr;
     }
 };
 
-class DoublyLinkedList {
+class DoublyLinkedList
+{
 private:
     Node *head;
 
@@ -22,25 +25,30 @@ public:
     DoublyLinkedList() : head(nullptr) {}
 
     // Insert at beginning
-    void insertAtHead(int data) {
+    void insertAtHead(int data)
+    {
         Node *newNode = new Node(data);
         newNode->next = head;
-        if (head != nullptr) {
+        if (head != nullptr)
+        {
             head->prev = newNode;
         }
         head = newNode;
     }
 
     // Forward traversal
-    void printForward() {
-        if (head == nullptr) {
+    void printForward()
+    {
+        if (head == nullptr)
+        {
             cout << "List is empty" << endl;
             return;
         }
-        
+
         Node *curr = head;
         cout << "Forward Traversal: ";
-        while (curr != nullptr) {
+        while (curr != nullptr)
+        {
             cout << curr->data << " ";
             curr = curr->next;
         }
@@ -48,19 +56,23 @@ public:
     }
 
     // Backward traversal
-    void printBackward() {
-        if (head == nullptr) {
+    void printBackward()
+    {
+        if (head == nullptr)
+        {
             cout << "List is empty" << endl;
             return;
         }
 
         Node *curr = head;
-        while (curr->next != nullptr) {
+        while (curr->next != nullptr)
+        {
             curr = curr->next;
         }
 
         cout << "Backward Traversal: ";
-        while (curr != nullptr) {
+        while (curr != nullptr)
+        {
             cout << curr->data << " ";
             curr = curr->prev;
         }
@@ -68,9 +80,11 @@ public:
     }
 
     // Destructor to free memory
-    ~DoublyLinkedList() {
+    ~DoublyLinkedList()
+    {
         Node *curr = head;
-        while (curr != nullptr) {
+        while (curr != nullptr)
+        {
             Node *temp = curr;
             curr = curr->next;
             delete temp;
@@ -78,9 +92,10 @@ public:
     }
 };
 
-int main() {
+int main()
+{
     DoublyLinkedList dll;
-    
+
     // Insert some elements
     dll.insertAtHead(30);
     dll.insertAtHead(20);
