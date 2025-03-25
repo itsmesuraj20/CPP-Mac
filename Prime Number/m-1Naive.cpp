@@ -1,3 +1,5 @@
+//Check for Prime Number Method-1 Naive Solution 
+
 #include<bits/stdc++.h>
 using namespace std;
 
