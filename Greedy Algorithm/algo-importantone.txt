@@ -1,0 +1,48 @@
+//Greedy Algorithm are as follows:
+// 1. Activity Selection Problem
+// 2. Fractional Knapsack Problem
+// 3. Job Sequencing Problem
+// 4. Huffman Coding
+// 5. Prim's Algorithm
+// 6. Kruskal's Algorithm
+// 7. Dijkstra's Algorithm
+// 8. Coin Change Problem
+// 9. Minimum Spanning Tree
+// 10. Maximum Product Subarray
+// 11. Minimum Number of Platforms
+// 12. Minimum Cost of Connecting Ropes
+// 13. Minimum Number of Coins
+// 14. Maximum Sum of Non-Adjacent Elements
+// 15. Minimum Number of Jumps to Reach End
+// 16. Maximum Sum of Increasing Subsequence
+// 17. Minimum Number of Coins for Change
+// 18. Maximum Sum of Non-Adjacent Elements
+// 19. Minimum Number of Platforms for Train Scheduling
+// 20. Minimum Cost of Cutting a Rod
+// 21. Maximum Sum of Subarray
+// 22. Minimum Number of Coins for Change
+// 23. Maximum Sum of Non-Adjacent Elements
+// 24. Minimum Number of Jumps to Reach End
+// 25. Maximum Sum of Increasing Subsequence
+// 26. Minimum Number of Coins for Change
+// 27. Maximum Sum of Non-Adjacent Elements
+// 28. Minimum Number of Platforms for Train Scheduling
+// 29. Minimum Cost of Cutting a Rod
+// 30. Maximum Sum of Subarray
+// 31. Minimum Number of Coins for Change
+// 32. Maximum Sum of Non-Adjacent Elements
+// 33. Minimum Number of Jumps to Reach End
+// 34. Maximum Sum of Increasing Subsequence
+// 35. Minimum Number of Coins for Change
+// 36. Maximum Sum of Non-Adjacent Elements
+// 37. Minimum Number of Platforms for Train Scheduling
+// 38. Minimum Cost of Cutting a Rod
+// 39. Maximum Sum of Subarray
+// 40. Minimum Number of Coins for Change
+// 41. Maximum Sum of Non-Adjacent Elements
+// 42. Minimum Number of Jumps to Reach End
+// 43. Maximum Sum of Increasing Subsequence
+// 44. Minimum Number of Coins for Change
+// 45. Maximum Sum of Non-Adjacent Elements
+// 46. Minimum Number of Platforms for Train Scheduling
+// 47. Minimum Cost of Cutting a Rod
