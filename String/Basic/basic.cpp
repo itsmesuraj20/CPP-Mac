@@ -239,3 +239,18 @@ void String::replaceAll(const char* oldStr, const char* newStr) {
     }
 }
 
+//Count function
+int String::count(const char* s) const {
+    int count = 0;
+    char* temp = new char[strlen(str) + 1];
+    strcpy(temp, str);
+    char* token = strtok(temp, s);
+    while (token != nullptr) {
+        count++;
+        token = strtok(nullptr, s);
+    }
+    delete[] temp;
+    return count - 1; // Subtract 1 to get the number of occurrences
+}
+
+
