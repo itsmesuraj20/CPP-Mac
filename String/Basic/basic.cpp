@@ -204,3 +204,38 @@ void String::replaceAll(const char* oldStr, const char* newStr) {
         index = find(oldStr);
     }
 }
+
+
+//Count function
+int String::count(const char* s) const {
+    int count = 0;
+    char* temp = new char[strlen(str) + 1];
+    strcpy(temp, str);
+    char* token = strtok(temp, s);
+    while (token != nullptr) {
+        count++;
+        token = strtok(nullptr, s);
+    }
+    delete[] temp;
+    return count - 1; // Subtract 1 to get the number of occurrences
+}
+
+//FindAll function
+void String::findAll(const char* s, int* indices, int& count) const {
+    count = 0;
+    char* pos = strstr(str, s);
+    while (pos != nullptr) {
+        indices[count++] = pos - str;
+        pos = strstr(pos + 1, s);
+    }
+}
+
+//ReplaceAll function
+void String::replaceAll(const char* oldStr, const char* newStr) {
+    int index = find(oldStr);
+    while (index != -1) {
+        replace(oldStr, newStr);
+        index = find(oldStr);
+    }
+}
+
