@@ -20,6 +20,7 @@ int main(){
     cout<<n<<" : enter by you " <<endl;
 
     primeFactor(n);
-    
 
+
+    
 }
