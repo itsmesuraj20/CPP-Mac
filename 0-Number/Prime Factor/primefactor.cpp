@@ -18,7 +18,6 @@ int main(){
     cout<<"Enter the value : "<<endl;
     cin>>n;
     cout<<n<<" : enter by you " <<endl;
-
     primeFactor(n);
 
 
