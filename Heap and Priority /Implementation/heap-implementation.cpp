@@ -8,6 +8,7 @@ int main(){
     //Creating a max heap
     priority_queue<int> maxHeap;
 
+    
     //Inserting elements into the max heap
     maxHeap.push(10);
     maxHeap.push(20);
