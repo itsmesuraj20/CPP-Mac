@@ -4,3 +4,4 @@ Topic Most Important for HFT -
 Danging Pointer & Nullifying it .
 
 Monotonic Stack 
+Monotonic Queue
