@@ -2,3 +2,5 @@ C++ Cheat Sheet-
 
 Topic Most Important for HFT -
 Danging Pointer & Nullifying it .
+
+Monotonic Stack 
