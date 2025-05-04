@@ -45,3 +45,17 @@ public:
         }
         return node->isEndOfWord;
     }
+    bool startsWith(string prefix) {
+        TrieNode* node = root;
+        for (char c : prefix) {
+            int index = c - 'a';
+            if (node->children[index] == nullptr) {
+                return false;
+            }
+            node = node->children[index];
+        }
+        return true;
+    }
+    void remove(string word) {
+        removeHelper(root, word, 0);
+    }
