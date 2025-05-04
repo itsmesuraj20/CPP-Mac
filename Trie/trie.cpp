@@ -97,3 +97,37 @@ public:
             }
         }
     }
+    void display() {
+        display(root, "");
+    }
+    void clear(TrieNode* node) {
+        if (node == nullptr) {
+            return;
+        }
+        for (int i = 0; i < 26; i++) {
+            clear(node->children[i]);
+        }
+        delete node;
+    }
+    ~Trie() {
+        clear(root);
+    }
+};
+int main() {
+    Trie trie;
+    trie.insert("hello");
+    trie.insert("world");
+    trie.insert("hi");
+    trie.insert("her");
+    trie.insert("he");
+    cout << "Trie contents:" << endl;
+    trie.display();
+    cout << "Search for 'hello': " << (trie.search("hello") ? "Found" : "Not Found") << endl;
+    cout << "Search for 'hell': " << (trie.search("hell") ? "Found" : "Not Found") << endl;
+    cout << "Starts with 'he': " << (trie.startsWith("he") ? "Yes" : "No") << endl;
+    trie.remove("hello");
+    cout << "After removing 'hello':" << endl;
+    trie.display();
+    return 0;
+}
+// This code implements a Trie data structure with insert, search, startsWith, remove, and display functions.
