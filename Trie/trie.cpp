@@ -129,5 +129,6 @@ int main() {
     cout << "After removing 'hello':" << endl;
     trie.display();
     return 0;
+    
 }
 // This code implements a Trie data structure with insert, search, startsWith, remove, and display functions.
