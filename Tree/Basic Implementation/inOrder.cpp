@@ -36,6 +36,7 @@ int main(){
     cout<<"Inorder Traversal: ";
     inOrder(root);
     cout<<endl;
+
     
     return 0;
 }
