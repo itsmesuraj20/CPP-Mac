@@ -37,6 +37,5 @@ int main(){
     inOrder(root);
     cout<<endl;
 
-    
     return 0;
 }
