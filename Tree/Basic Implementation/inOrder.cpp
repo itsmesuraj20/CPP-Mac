@@ -25,6 +25,7 @@ void inOrder(Node *root)
     inOrder(root->left);
     cout << root->data << " ";
     inOrder(root->right);
+    
 }
 
 int main()
