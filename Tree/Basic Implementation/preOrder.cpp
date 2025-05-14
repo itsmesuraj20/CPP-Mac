@@ -22,6 +22,7 @@ void preOrder(Node* root) {
     preOrder(root->left);
     preOrder(root->right);
 }
+
 int main() {
     Node* root = new Node(1);
     root->left = new Node(2);
