@@ -36,6 +36,7 @@ int main() {
 
     return 0;
 }
+
 // Time Complexity: O(n)
 // Space Complexity: O(h) where h is the height of the tree
 // This is a simple implementation of pre-order traversal of a binary tree.
