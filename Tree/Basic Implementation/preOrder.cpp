@@ -33,9 +33,8 @@ int main() {
     cout << "Pre-order Traversal: ";
     preOrder(root);
     cout << endl;
-    
-    return 0;
 
+    return 0;
 }
 
 // Time Complexity: O(n)
