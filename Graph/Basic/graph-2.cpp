@@ -13,6 +13,7 @@ public:
         right = NULL;
     }   
 };
+
 void preOrder(Node* root) {
     if (root == NULL) {
         return;
