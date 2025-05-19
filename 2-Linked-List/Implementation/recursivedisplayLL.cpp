@@ -1,7 +1,7 @@
 //Displaying Linkedlist using recursion
 #include<bits/stdc++.h>
 using namespace std;
-
+// Node structure
 class Node{
     public:
     int data;
