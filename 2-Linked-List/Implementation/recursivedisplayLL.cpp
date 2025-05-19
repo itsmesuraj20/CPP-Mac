@@ -20,7 +20,7 @@ void recursivePrint(Node *head) {
     cout<<head -> data << " ";
     recursivePrint(head -> next);
 }
-
+// Function to display linked list using recursion
 int main(){
     Node *head = new Node(1);
     head ->next = new Node(2);
