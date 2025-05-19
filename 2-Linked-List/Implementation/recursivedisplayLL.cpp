@@ -11,7 +11,7 @@ class Node{
         next = NULL;
     }
 };
-
+// Function to display linked list using recursion
 void recursivePrint(Node *head) {
     if(head == NULL){
         return ;
