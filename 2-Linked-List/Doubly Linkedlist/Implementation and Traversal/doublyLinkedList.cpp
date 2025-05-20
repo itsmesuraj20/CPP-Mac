@@ -9,7 +9,7 @@ public:
     
     Node(int x) : data(x), prev(nullptr), next(nullptr) {}
 };
-
+// Doubly Linked List class
 class DoublyLinkedList {
 private:
     Node* head;
