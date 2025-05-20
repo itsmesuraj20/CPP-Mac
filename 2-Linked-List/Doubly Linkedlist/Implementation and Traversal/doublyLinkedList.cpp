@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+// Doubly Linked List Node structure
 class Node {
 public:
     int data;
