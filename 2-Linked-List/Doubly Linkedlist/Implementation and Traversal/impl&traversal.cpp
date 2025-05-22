@@ -63,7 +63,6 @@ public:
             cout << "List is empty" << endl;
             return;
         }
-
         Node *curr = head;
         while (curr->next != nullptr)
         {
