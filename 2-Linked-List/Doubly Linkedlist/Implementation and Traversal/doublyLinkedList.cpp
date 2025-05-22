@@ -6,7 +6,6 @@ public:
     int data;
     Node* prev;
     Node* next;
-    
     Node(int x) : data(x), prev(nullptr), next(nullptr) {}
 };
 // Doubly Linked List class
