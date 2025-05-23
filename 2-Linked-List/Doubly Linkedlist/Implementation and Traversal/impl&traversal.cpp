@@ -76,7 +76,6 @@ public:
         }
         cout << endl;
     }
-
     // Destructor to free memory
     ~DoublyLinkedList()
     {
