@@ -34,5 +34,21 @@ int main(){
 
     //Iterating through the heap elements
     cout << "Heap elements: ";
+    priority_queue<int> tempHeap = maxHeap; // Create a copy to iterate
+    while (!tempHeap.empty()) {
+        cout << tempHeap.top() << " ";
+        tempHeap.pop();
+    }
+    cout << endl;
+    //Clearing the heap
+    while (!maxHeap.empty()) {
+        maxHeap.pop();
+    }
+    cout << "Heap cleared." << endl;
+    if (maxHeap.empty()) {
+        cout << "Heap is empty after clearing." << endl;
+    } else {
+        cout << "Heap is not empty after clearing." << endl;
+    }
     return 0;
 }
