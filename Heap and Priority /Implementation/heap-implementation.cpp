@@ -29,5 +29,7 @@ int main(){
     } else {
         cout << "Heap is not empty" << endl;
     }
+    //Printing the size of the heap
+    cout << "Size of heap: " << maxHeap.size() << endl;
     return 0;
 }
