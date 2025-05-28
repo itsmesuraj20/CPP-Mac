@@ -53,5 +53,13 @@ int main(){
 
     //Printing the size of the heap after clearing
     cout << "Size of heap after clearing: " << maxHeap.size() << endl;
+
+    //Heap is a complete binary tree, so we can also use an array to represent it.
+    vector<int> heapArray = {30, 20, 10, 5}; // Example array representation of a max heap
+    cout << "Array representation of heap: ";
+    for (int i = 0; i < heapArray.size(); i++) {
+        cout << heapArray[i] << " ";
+    }
+    cout << endl;
     return 0;
 }
