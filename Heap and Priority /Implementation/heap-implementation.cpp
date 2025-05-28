@@ -31,5 +31,8 @@ int main(){
     }
     //Printing the size of the heap
     cout << "Size of heap: " << maxHeap.size() << endl;
+
+    //Iterating through the heap elements
+    cout << "Heap elements: ";
     return 0;
 }
