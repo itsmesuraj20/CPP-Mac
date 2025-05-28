@@ -23,6 +23,11 @@ int main(){
 
     //Printing the new maximum element
     cout << "New maximum element: " << maxHeap.top() << endl;
-
+    //Checking if the heap is empty
+    if (maxHeap.empty()) {
+        cout << "Heap is empty" << endl;
+    } else {
+        cout << "Heap is not empty" << endl;
+    }
     return 0;
 }
