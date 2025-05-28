@@ -65,5 +65,9 @@ int main(){
     //Heap sort using the array representation
     sort(heapArray.begin(), heapArray.end(), greater<int>());
     cout << "Sorted array using heap sort: ";
+    for (int i = 0; i < heapArray.size(); i++) {
+        cout << heapArray[i] << " ";
+    }
+    cout << endl;
     return 0;
 }
