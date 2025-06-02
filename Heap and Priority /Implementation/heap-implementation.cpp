@@ -44,6 +44,7 @@ int main(){
     while (!maxHeap.empty()) {
         maxHeap.pop();
     }
+    
     cout << "Heap cleared." << endl;
     if (maxHeap.empty()) {
         cout << "Heap is empty after clearing." << endl;
