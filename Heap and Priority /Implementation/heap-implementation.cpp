@@ -50,7 +50,6 @@ int main(){
     } else {
         cout << "Heap is not empty after clearing." << endl;
     }
-
     //Printing the size of the heap after clearing
     cout << "Size of heap after clearing: " << maxHeap.size() << endl;
 
