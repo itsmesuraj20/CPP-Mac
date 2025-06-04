@@ -68,6 +68,7 @@ int main(){
     for (int i = 0; i < heapArray.size(); i++) {
         cout << heapArray[i] << " ";
     }
+    
     cout << endl;
     return 0;
 }
