@@ -34,6 +34,7 @@ int main()
     printGraph(adj, V);
     return 0;
 }
+
 // Output:
 // Adjacency list of vertex 0
 // head -> 1 -> 4
