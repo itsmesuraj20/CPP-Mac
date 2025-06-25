@@ -12,6 +12,7 @@ class Node{
     }
 };
 
+
 Node *insertAtEnd(Node *head ,int n){
     Node *temp = new Node(n);
     
