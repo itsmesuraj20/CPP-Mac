@@ -3,7 +3,7 @@ using namespace std;
 
 
 int main(){
-    
+
     int arr1[] = {1,5,6,7,2,3,9};
     int n = sizeof(arr1)/sizeof(arr1[0]);
 
@@ -26,6 +26,7 @@ int main(){
         break;
        }
     }
+    
     if(result) cout<<"Sorted in ascending order or Non-descending order" << endl;
     else cout<<"Not Sorted" <<endl;
     }
