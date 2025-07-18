@@ -26,8 +26,11 @@ int main(){
         break;
        }
     }
+
+    if(result) 
+    cout<<"Sorted in ascending order or Non-descending order" << endl;
     
-    if(result) cout<<"Sorted in ascending order or Non-descending order" << endl;
-    else cout<<"Not Sorted" <<endl;
+    else 
+    cout<<"Not Sorted" <<endl;
     }
 }
