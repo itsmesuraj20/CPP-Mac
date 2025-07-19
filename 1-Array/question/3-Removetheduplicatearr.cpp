@@ -35,6 +35,10 @@ int bruteMethod(vector<int> &arr){
 }
 
 int optimizedMethod(vector<int> &arr){
+    
+    //TC-O(n)
+    //SC -O(1)
+
     int i = 0;
     for(int j = 0;j<arr.size();j++){
         if(arr[i] != arr[j]){
