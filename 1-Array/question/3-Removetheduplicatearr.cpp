@@ -12,12 +12,52 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 */
 
+int bruteMethod(vector<int> &arr){
+
+    //TC- O(n logn);
+    //SC- O(n);
+
+     set<int> setTable;
+
+    for (int i = 0; i < arr.size(); i++)
+    {
+        setTable.insert(arr[i]);
+    }
+    
+    arr.clear();
+
+
+    for(auto it : setTable){
+       arr.push_back(it);  
+    }
+    return arr.size();
+
+}
+
+int optimizedMethod(vector<int> &arr){
+    int i = 0;
+    for(int j = 0;j<arr.size();j++){
+        if(arr[i] != arr[j]){
+            arr[i+1] = arr[j];
+            i++;
+        }
+    }
+
+    return i+1;
+}
+
 int main(){
 
-    vector<int> arr[] = [1,1,2];
+    vector<int> arr = {-1,1,2,-3};
 
-    
-    
+    if(arr.size()<1){
+        cout<<"Must have 1 value to proceed"<<endl;
+    }
 
-    return 0;
+    else{
+    cout<<"Brute Method : " << bruteMethod(arr)<<"\n";    
+    cout<<"Optimized Method : " << optimizedMethod(arr)<<"\n";
+    }
+
+    return 0; 
 }
