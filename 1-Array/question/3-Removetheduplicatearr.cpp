@@ -17,7 +17,7 @@ int bruteMethod(vector<int> &arr){
     //TC- O(n logn);
     //SC- O(n);
 
-     set<int> setTable;
+    set<int> setTable;
 
     for (int i = 0; i < arr.size(); i++)
     {
@@ -25,7 +25,6 @@ int bruteMethod(vector<int> &arr){
     }
     
     arr.clear();
-
 
     for(auto it : setTable){
        arr.push_back(it);  
@@ -35,12 +34,12 @@ int bruteMethod(vector<int> &arr){
 }
 
 int optimizedMethod(vector<int> &arr){
-    
+
     //TC-O(n)
     //SC -O(1)
 
     int i = 0;
-    for(int j = 0;j<arr.size();j++){
+    for(int j = 0;j<arr.size();j++){ 
         if(arr[i] != arr[j]){
             arr[i+1] = arr[j];
             i++;
@@ -54,7 +53,7 @@ int main(){
 
     vector<int> arr = {-1,1,2,-3};
 
-    if(arr.size()<1){
+    if(arr.empty()){
         cout<<"Must have 1 value to proceed"<<endl;
     }
 
