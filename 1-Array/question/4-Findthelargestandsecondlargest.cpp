@@ -25,12 +25,11 @@ int secondLargestBruteMethod(vector<int> &arr){
 }
 
 int largestBetter(vector<int> arr){
-    
+
     return 0;
 }
 
 int secondLargestBetter(vector<int> arr){
-
 
     return 0;
 }
