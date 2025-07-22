@@ -25,7 +25,7 @@ int secondLargestBruteMethod(vector<int> &arr){
 }
 
 int largestBetter(vector<int> arr){
-
+    int largestSoFar = arr[0];
     return 0;
 }
 
