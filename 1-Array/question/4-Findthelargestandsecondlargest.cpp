@@ -34,11 +34,21 @@ int largestBetter(vector<int> arr){
     }
 
     return largestSoFar;
+
+    //TC- O(N)
+    //SC- O(1)
 }
 
 int secondLargestBetter(vector<int> arr){
+    int largestSoFar = largestBetter(arr);
 
-    return 0;
+
+    for(int i = 0 ; i<arr.size();i++)
+    {
+           if(arr[i] <= largestSoFar && arr[i] < smallestSoFar)
+            smallestSoFar = arr[i];
+    }
+    return smallestSoFar;
 }
 
 int largestOptimal(vector<int> arr){
@@ -51,18 +61,18 @@ int secondLargestOptimal(vector<int> arr){
 }
 
 int main(){
-    vector<int> arr = {1,2,3};
+    vector<int> arr = {12,11,10};
 
     cout<<"Brute Method" << endl;
     
     cout<<"Largest in the array : " << largestBruteMethod(arr) << endl;
     cout<<"Second Smallest in the array : " << secondLargestBruteMethod(arr) << endl;
-
+    cout<<"\n";
     cout<<"Better Method" << endl;
 
     cout<<"Largest in the array in the better " << largestBetter(arr) << endl;
     cout<<"Second Smallest in the array better " << secondLargestBetter(arr) << endl;
-
+    cout<<"\n";
     cout<<"Optimize Method" << endl;
 
     cout<<"Largest in the array in the optimized " << largestOptimal(arr) << endl;
