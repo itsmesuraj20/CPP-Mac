@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int bruteCheck(vector<int> &arr){
+vector<int> bruteCheck(vector<int> &arr){
     set<int> s;
     int n = arr.size();
 
@@ -17,7 +17,7 @@ int bruteCheck(vector<int> &arr){
         arr.push_back(i);
     }
 
-    return arr.size();
+    return arr;
 
 }
 
@@ -25,5 +25,9 @@ int bruteCheck(vector<int> &arr){
 int main(){
     vector<int> arr = {1,1,1,2,2,3,3,3,3};
 
-    cout<<bruteCheck(arr);
+    vector<int> newarr = bruteCheck(arr);
+
+    for(int i = 0;i<newarr.size();i++){
+        cout<<newarr[i]<< " ";
+    }
 }
