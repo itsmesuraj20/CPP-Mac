@@ -22,16 +22,7 @@ vector<int> bruteRotate(vector<int> arr ,int d ){
    return arr;
 }
 
-vector<int> optimalRotate(vector<int> arr,int d){
-    
-    int n = arr.size();
 
-    reverse(arr.begin(), arr.begin()+d); // OR reverse(arr,arr + d); for int arr , not vector arr
-    reverse(arr.begin()+d,arr.end()); //    OR reverse(arr+d,arr+n); for int arr , not vector arr
-    reverse(arr.begin(),arr.begin()+n);//   OR reverse(arr,arr+n);   for int arr , not vector arr
-    
-    return arr;
-}
 
 int main(){
     vector<int> arr = {1,2,3,4,5,6,7,8,9,0};
