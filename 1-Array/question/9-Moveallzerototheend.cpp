@@ -22,6 +22,7 @@ vi brute1(vi nums){
     }
 }
 
+
 vi brute2(vi nums){
     //By striver
     vi newArr;
