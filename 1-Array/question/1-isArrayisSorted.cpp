@@ -5,6 +5,8 @@ using namespace std;
 int main(){
 
     int arr1[] = {1,5,6,7,2,3,9};
+
+    //This is the method to find the size of the array.
     int n = sizeof(arr1)/sizeof(arr1[0]);
 
     cout<<n<<endl;
