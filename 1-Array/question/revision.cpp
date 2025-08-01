@@ -2,17 +2,44 @@
 using namespace std;
 
 int main(){
-    vector<int> arr = {1,2,3,4,5};
+    vector<int> nums = {0,1,3,0,12};
 
-    // .erase function is used to delete the position index value from vector array
-    arr.erase(arr.begin() + ); // Erase element at index 4 (i.e., value 5)
+        vector<int> arr;
+        int n = nums.size();
+        int countZero = 0;
+        cout<<n<<endl;
+        for(int i = 0 ; i < n ; i++){
+            if(nums[i] != 0){
+                arr.push_back(nums[i]);
+            }
+            else{
+                countZero++;
+            }
+        }
 
-    for(int i : arr){
-        cout << i << " ";
-    }
+        
+        cout<<"New N : "<< n <<endl;
+        while(countZero--){
+            arr.push_back(0);
+        }
 
-    return 0;
+       
+        
 }
+
+
+// int main(){
+//     vector<int> arr = {1,2,3,4,5};
+
+//     // .erase function is used to delete the position index value from vector array
+//     arr.erase(arr.begin() + ); // Erase element at index 4 (i.e., value 5)
+
+//     for(int i : arr){
+//         cout << i << " ";
+//     }
+
+//     return 0;
+// }
 
 // int main(){
 //     //  vector<int> arr = {1,2,3,4,5,6,7,8,9,0};
