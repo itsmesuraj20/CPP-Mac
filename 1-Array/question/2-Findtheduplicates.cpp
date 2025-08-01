@@ -4,7 +4,8 @@ using namespace std;
 
 /*
 Find the duplicates 
-[1,1,2,3,4,5,6,6]
+[1,1,2,3,4,5,6,6] , suppose only one duplicate present in the array
+
 From coding Ninjas
 
 */
@@ -23,10 +24,14 @@ int checkBrute(vi arr){
         }
     }
     return -1;
+
+    //TC : O(n);
+    //SC : O(n);
+
 }
 
 int main(){
-    vi arr = {5,1,2,3,4,5,0 ,0};
+    vi arr = {5,1,2,3,4,0 ,0};
 
     int ans = checkBrute(arr);
 
