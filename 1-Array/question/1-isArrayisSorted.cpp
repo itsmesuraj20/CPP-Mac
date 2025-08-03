@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*Quick Recall -
+
+Solution - i-> 1 index se chalao , and compare kro previous wale se , bool result = false,
+and break kr jao . Return the answer.
+
+*/
 
 int main(){
 

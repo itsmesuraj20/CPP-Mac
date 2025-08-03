@@ -10,6 +10,24 @@ From coding Ninjas
 
 */
 
+
+/*
+Quick Revision -
+
+Brute : 
+Do Loop chlao , jisme first wala i->0 se n tak , then j->i+1 se n tak chlega , agar arr[i] == arr[j]
+ans = -1; // default pe rahega
+howa to return ans; kar dena , nhi to return -1;
+TC - O(n^2)
+SC - O(1);
+
+Brute (version 2): 
+Mein unordered set bnao , usmein jo element ka count 2+ ho wo return krdo simple.
+
+
+
+*/
+
 int checkBrutev1(vi arr){
     int n = arr.size();
     int ans = -1;
@@ -24,25 +42,25 @@ int checkBrutev1(vi arr){
 }
 
 
-// int checkBrutev2(vi arr){
-//     int n = arr.size();
+int checkBrutev2(vi arr){
+    int n = arr.size();
 
-//    unordered_map<int,int> mp;
-//     for(int i = 0 ; i<n;i++){
-//         mp[arr[i]]++;
-//     }
+   unordered_map<int,int> mp;
+    for(int i = 0 ; i<n;i++){
+        mp[arr[i]]++;
+    }
 
-//     for(auto  i : mp){
-//         if(i.second != 1){
-//             return i.first;
-//         }
-//     }
-//     return -1;
+    for(auto  i : mp){
+        if(i.second != 1){
+            return i.first;
+        }
+    }
+    return -1;
 
-//     //TC : O(n);
-//     //SC : O(n);
+    //TC : O(n);
+    //SC : O(n);
 
-// }
+}
 
 int main(){
     // vi arr = {5,1,2,3,4,4,9,0};
