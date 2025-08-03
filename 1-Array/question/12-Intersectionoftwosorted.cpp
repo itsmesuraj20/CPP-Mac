@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    vector<int> arr1 = {1,2,3,4,5,6}; 
-    vector<int> arr2 = {1,2,3,4,7,8};
 
+void intersection_brute(vector<int> arr1,vector<int> arr2)
+{
     vector<int> ans;
+    
     int m = arr1.size(); 
     int n = arr2.size();
 
@@ -26,6 +26,23 @@ int main(){
    for(int i : ans){
     cout<<i<<" ";
    }
+
+}
+
+
+void intersection_Optimal(vector<int> arr1, vector<int> arr2)
+{
+    
+
+}
+
+
+int main(){
+    vector<int> arr1 = {1,2,3,4,5,6}; 
+    vector<int> arr2 = {1,2,3,4,7,8};
+
+    intersection_brute(arr1,arr2);
+   
 
     return 0;
 }
