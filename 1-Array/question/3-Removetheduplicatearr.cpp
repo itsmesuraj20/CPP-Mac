@@ -10,6 +10,28 @@ Explanation: Your function should return k = 2, with the first two elements of n
 It does not matter what you leave beyond the returned k (hence they are underscores).
 
 
+Suraj Understanding : Basic you have to remove the duplicate element to single element and then return the unique from the array
+
+*/
+
+
+
+/*
+Quick Revision : 
+
+Brute Method : 
+
+- Set Table bnao jisme saare item ka insert krlo
+- Then original array ko clear kardo arr.clear() se. 
+- phir set table se Original array mein wapis item insert krke , return arr kardo .
+
+TC - O(n log n);
+SC - O(n);
+
+Optimised Method : 
+
+
+
 */
 
 int bruteMethod(vector<int> &arr){
@@ -33,7 +55,7 @@ int bruteMethod(vector<int> &arr){
 
 }
 
-int optimizedMethod(vector<int> &arr){
+int optimizedMethod_RemoveDuplicates(vector<int> &arr){
 
     //TC-O(n)
     //SC -O(1)
@@ -51,7 +73,8 @@ int optimizedMethod(vector<int> &arr){
 
 int main(){
 
-    vector<int> arr = {-1,1,2,-3};
+    // vector<int> arr = {-1,1,2,-3};
+    vector<int> arr = {1,2,2,3,4};
 
     if(arr.empty()){
         cout<<"Must have 1 value to proceed"<<endl;
@@ -59,7 +82,7 @@ int main(){
 
     else{
     cout<<"Brute Method : " << bruteMethod(arr)<<"\n";    
-    cout<<"Optimized Method : " << optimizedMethod(arr)<<"\n";
+    cout<<"Optimized Method : " << optimizedMethod_RemoveDuplicates(arr)<<"\n";
     }
 
     return 0; 
