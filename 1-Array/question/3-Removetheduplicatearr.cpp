@@ -34,7 +34,8 @@ Optimised Method :
 
 */
 
-int bruteMethod(vector<int> &arr){
+int bruteMethod(vector<int> &arr)
+ {
 
     //TC- O(n logn);
     //SC- O(n);
@@ -53,7 +54,7 @@ int bruteMethod(vector<int> &arr){
     }
     return arr.size();
 
-}
+ }
 
 int optimizedMethod_RemoveDuplicates(vector<int> &arr){
 
