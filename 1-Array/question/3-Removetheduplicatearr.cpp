@@ -31,7 +31,6 @@ SC - O(n);
 Optimised Method : 
 
 
-
 */
 
 int bruteMethod(vector<int> &arr)
