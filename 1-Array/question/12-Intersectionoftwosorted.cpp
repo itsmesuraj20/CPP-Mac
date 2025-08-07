@@ -29,10 +29,9 @@ void intersection_brute(vector<int> arr1,vector<int> arr2)
 
 }
 
-
 void intersection_Optimal(vector<int> arr1, vector<int> arr2)
 {
-    
+    int 
 
 }
 
