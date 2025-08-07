@@ -31,7 +31,10 @@ void intersection_brute(vector<int> arr1,vector<int> arr2)
 
 void intersection_Optimal(vector<int> arr1, vector<int> arr2)
 {
-    int 
+    int m = arr1.size();
+    int n = arr2.size();
+
+    
 
 }
 
