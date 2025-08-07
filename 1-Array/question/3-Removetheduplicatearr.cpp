@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 //https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/1703906517/
 /*
 
