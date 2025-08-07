@@ -34,7 +34,12 @@ void intersection_Optimal(vector<int> arr1, vector<int> arr2)
     int m = arr1.size();
     int n = arr2.size();
 
+    for (int i = 0; i < m; i++)
+    {
+        
+    }
     
+
 
 }
 
