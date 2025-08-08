@@ -36,7 +36,7 @@ void intersection_Optimal(vector<int> arr1, vector<int> arr2)
 
     for (int i = 0; i < m; i++)
     {
-        
+        if()
     }
     
 
