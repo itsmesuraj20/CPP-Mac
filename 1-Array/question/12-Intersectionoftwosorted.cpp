@@ -1,6 +1,15 @@
 #include<iostream>
 using namespace std;
+/*
+Find the intersection of the two sorted array 
 
+arr1[] = {1,2,2,3,4,5}
+arr2[] = {2,2,3,4}
+
+ans_Array [] = {2,2,3,4};
+
+
+*/
 
 
 void intersection_brute(vector<int> arr1,vector<int> arr2)
@@ -35,19 +44,19 @@ void intersection_Optimal(vector<int> arr1, vector<int> arr2)
     int m = arr1.size();
     int n = arr2.size();
 
-    for (int i = 0; i < m; i++)
-    {
-        if()
-    }
+    // for (int i = 0; i < m; i++)
+    // {
+    //     if()
+    // }
     
 
-
+    return;
 }
 
 
 int main(){
-    vector<int> arr1 = {1,2,3,4,5,6}; 
-    vector<int> arr2 = {1,2,3,4,7,8};
+    vector<int> arr1 = {1,2,2,3,4,5,6}; 
+    vector<int> arr2 = {1,2,2,3,4,7,8};
 
     intersection_brute(arr1,arr2);
    
