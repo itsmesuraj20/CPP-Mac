@@ -2,6 +2,7 @@
 using namespace std;
 
 
+
 void intersection_brute(vector<int> arr1,vector<int> arr2)
 {
     vector<int> ans;
