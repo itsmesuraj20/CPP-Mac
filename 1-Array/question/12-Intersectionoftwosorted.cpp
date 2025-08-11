@@ -44,22 +44,37 @@ void intersection_Optimal(vector<int> arr1, vector<int> arr2)
     int m = arr1.size();
     int n = arr2.size();
 
-    // for (int i = 0; i < m; i++)
-    // {
-    //     if()
-    // }
-    
+    vector<int> result;
 
-    return;
+    int i = 0 , j = 0 ; 
+    while(i< m && j<n){
+    if(arr1[i] > arr2[j]) j++;
+
+    else if(arr1[i] < arr2[j]) i++;
+
+    else
+       {
+            result.push_back(arr1[i]);
+            i++;
+            j++;
+        }
+   }
+
+    for(int i : result){
+        cout<<i<< " " ;
+    }
 }
 
 
 int main(){
-    vector<int> arr1 = {1,2,2,3,4,5,6}; 
-    vector<int> arr2 = {1,2,2,3,4,7,8};
+    // vector<int> arr1 = {1,2,2,3,4,5,6}; 
+    // vector<int> arr2 = {1,2,2,3,4,7,8};
 
-    intersection_brute(arr1,arr2);
-   
+    vector<int> arr1 = { 1,2,2,3,4};
+    vector<int> arr2 = {2,2,3,4};
+
+    // intersection_brute(arr1,arr2);
+    intersection_Optimal(arr1,arr2);
 
     return 0;
 }
