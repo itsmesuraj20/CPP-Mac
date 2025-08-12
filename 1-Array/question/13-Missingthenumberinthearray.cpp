@@ -12,15 +12,16 @@ ans = 3
 
 */
 
-void brute_missingnum(vector<int> &arr){
+void brute_missingnum(vector<int> &arr)
+{
 
     sort(arr.begin() , arr.end());
-
     int n = arr.size();
 
-    for(int i = 1 ; i < n ; i++ ){
+    for(int i = 1 ; i < n ; i++ ) // 0 1 2 3 4
+    {
         int flag = 0;
-        for (int j = 0; j < n-1; j++)
+        for (int j = 0; j < n-1; j++) // 0 1 2 4
         {
             if(arr[j] == i ){
                 flag = 1;
@@ -50,6 +51,7 @@ void better_missingnum(vector<int> &arr){
 }
 
 void optimal_missingnum(vector<int> &arr){
+
     int n = arr.size();
     int totalSum = (n * (n+1))/2;
 
