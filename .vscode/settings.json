@@ -8,7 +8,11 @@
         "string": "cpp",
         "vector": "cpp",
         "iostream": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "map": "cpp",
+        "string_view": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

@@ -3,22 +3,31 @@ using namespace std;
 
 int main() {
     int a = 1;
-    int b = 2;
-    int c = 1;
-    int d = 2;
-    int e = 4;
-    int f = 5;
+    int b = 0;
+   
 
-    vector<pair<string, int>> vars = {
-        {"a", a}, {"b", b}, {"c", c}, {"d", d}, {"e", e}, {"f", f}
-    };
+    
 
-    for (int i = 0; i < vars.size(); i++) {
-        for (int j = 0; j < vars.size(); j++) {
-            cout << vars[i].first << " ^ " << vars[j].first
-                 << " = " << (vars[i].second ^ vars[j].second) << endl;
-        }
-    }
+    // Perform XOR for all combinations and print
+    cout << "a ^ a = " << (a ^ a) << endl;
+    cout << "a ^ b = " << (a ^ b) << endl;
+    // cout << "a ^ c = " << (a ^ c) << endl;
+    // cout << "a ^ d = " << (a ^ d) << endl;
+
+    cout << "b ^ a = " << (b ^ a) << endl;
+    cout << "b ^ b = " << (b ^ b) << endl;
+    // cout << "b ^ c = " << (b ^ c) << endl;
+    // cout << "b ^ d = " << (b ^ d) << endl;
+
+    // cout << "c ^ a = " << (c ^ a) << endl;
+    // cout << "c ^ b = " << (c ^ b) << endl;
+    // cout << "c ^ c = " << (c ^ c) << endl;
+    // cout << "c ^ d = " << (c ^ d) << endl;
+
+    // cout << "d ^ a = " << (d ^ a) << endl;
+    // cout << "d ^ b = " << (d ^ b) << endl;
+    // cout << "d ^ c = " << (d ^ c) << endl;
+    // cout << "d ^ d = " << (d ^ d) << endl;
 
     return 0;
 }
