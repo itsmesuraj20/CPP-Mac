@@ -2,13 +2,15 @@
 using namespace std;
 
 int main (){
-
-    string s = "greentea";
-    if(s.contains("tea")){
-        cout<< "YES";
+    int n ;
+    string s;
+    cin>>n;
+    cin>>s;
+    if(s.find("tea") != string ::npos){
+        cout<< "Yes";
     }
     else{
-        cout<<"NO";
+        cout<<"No";
     }
 
     return 0;
