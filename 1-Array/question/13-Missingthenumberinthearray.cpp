@@ -34,6 +34,7 @@ void brute_missingnum(vector<int> &arr)
     }
 }
 
+
 void better_missingnum(vector<int> &arr){
     map<int,int> hashmap;
     int n = arr.size();
