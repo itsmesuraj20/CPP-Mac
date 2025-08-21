@@ -103,3 +103,4 @@ Create a daily log of:
 
 ---
 *Remember: Consistency is key! Practice daily, even if just for 30 minutes.*
+

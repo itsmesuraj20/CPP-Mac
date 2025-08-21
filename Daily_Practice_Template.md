@@ -77,3 +77,4 @@
 **Total Study Time Today:** _____ hours
 **Mood:** 😊 😐 😞
 **Motivation Level:** ⭐⭐⭐⭐⭐
+
