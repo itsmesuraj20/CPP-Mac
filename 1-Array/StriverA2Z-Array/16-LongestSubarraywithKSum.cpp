@@ -1,9 +1,10 @@
 #include<iostream>
 using namespace std;
 
-//Formula to determine the total number of subarray
-
 /*
+
+Formula to determine the total number of subarray
+
 
  N = Number of element of the array;
  Total Number of subarray = ( n * (n+1) / 2 );
