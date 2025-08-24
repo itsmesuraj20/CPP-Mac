@@ -10,7 +10,7 @@ using namespace std;
 
 */
 
-void generateSubArray(vector<int> &arr){
+void generateSubArrayBruteMethod(vector<int> &arr){
     int n = arr.size();
     for (int i = 0; i < n; i++)
     {
@@ -20,9 +20,10 @@ void generateSubArray(vector<int> &arr){
                 cout << arr[k] << " ";
             cout << endl;
         }
-        
     }
 }
+
+
 
 int main(){
     vector<int> arr = {1,2,3,1,1,1,1,4,2,3};
@@ -30,7 +31,7 @@ int main(){
     int k;
 
     cout<<arr.size()<<endl;
-    generateSubArray(arr);
+    generateSubArrayBruteMethod(arr);
 
     return 0;
 }
