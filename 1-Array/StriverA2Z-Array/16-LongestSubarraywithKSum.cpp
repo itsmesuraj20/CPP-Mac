@@ -40,7 +40,7 @@ void generateSubArrayRecursively(vector<int>& arr, int start, int end) {
             cout << arr[i] << " ";
 
         cout << endl;
-        
+
         generateSubArrayRecursively(arr, start + 1, end);  
     }
 }
@@ -52,9 +52,10 @@ int main(){
 
     int k;
 
-    // cout<<arr.size()<<endl;
-    // generateSubArrayBruteMethod(arr);
+    cout<<arr.size()<<endl;
+    generateSubArrayBruteMethod(arr);
     generateSubArrayRecursively(arr, 0 , 0);
+    
 
     return 0;
 }
