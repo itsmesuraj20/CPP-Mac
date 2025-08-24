@@ -15,7 +15,10 @@ ans = 3
 void brute_missingnum(vector<int> &arr)
 {
 
-    sort(arr.begin() , arr.end());
+    //Remarks : Do Linear Search for each element of the array
+
+
+    // sort(arr.begin() , arr.end());
     int n = arr.size();
 
     for(int i = 1 ; i < n ; i++ ) // 0 1 2 3 4
@@ -36,6 +39,9 @@ void brute_missingnum(vector<int> &arr)
 
 
 void better_missingnum(vector<int> &arr){
+    //Remarks : Do Hashmap , record each element in hash
+    //return the value whose hashcount is 0;
+
     map<int,int> hashmap;
     int n = arr.size();
     hashmap[n+1] = 0;
@@ -52,8 +58,12 @@ void better_missingnum(vector<int> &arr){
 }
 
 void optimal_missingnum(vector<int> &arr){
+    
+    // Remarks : Use maths formula
 
     int n = arr.size();
+
+    //Math Standard Formula .
     int totalSum = (n * (n+1))/2;
 
     int s2{0};
@@ -67,7 +77,9 @@ void optimal_missingnum(vector<int> &arr){
 }
 
 void optimal_missingnum2(vector<int> &arr){
-    //Using two loop
+    
+    //Remarks : Using two loop with XOR (Bit Manipulations)
+
     //TC - O(2N) , SC=O(1);
     int XOR1 = 0;
     int n = arr.size();
@@ -87,8 +99,11 @@ void optimal_missingnum2(vector<int> &arr){
 }
 
 void optimal_missingnum3(vector<int> &arr){
-    //Reduced to one loop
+
+    //Remarks : Reduced to one loop
+
     //TC - O(n) , SC=O(1);
+    
     int n = arr.size() + 1;  // because 1 number is missing
     int xorAll = 0;
 
@@ -105,13 +120,14 @@ void optimal_missingnum3(vector<int> &arr){
 int main(){
 
     // vector<int> arr = {0,1,2,4,5};
-    vector<int> arr = {3,0,1};
+    // vector<int> arr = {3,0,1};
     // vector<int> arr = {0,2,3,4,5};
+    vector<int> arr = {1, 2, 3, 4};
 
     brute_missingnum(arr);
-    better_missingnum(arr);
-    optimal_missingnum(arr);
-    optimal_missingnum2(arr);
+    // better_missingnum(arr);
+    // optimal_missingnum(arr);
+    // optimal_missingnum2(arr);
 
     return 0;
 }
