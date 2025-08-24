@@ -4,6 +4,51 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+
+int usingBruteMethod(vector<int> &arr){
     
+    int n = arr.size();
+
+    for(int i= 0 ; i< n; i++)
+    {
+        int nums = arr[i];
+        int cnt  = 0;
+
+        for (int j = 0; j < n; j++)
+        {
+            if(arr[j] == nums){
+                cnt++;
+            }
+        }
+        if(cnt == 1) return nums;
+    }
+}
+
+//TC - O(n^2)
+//SC - O(1)
+
+
+// int usingBetterMethod(vector<int> &arr){
+
+// }
+
+int usingOptimalMethod(vector<int> &arr){
+    int XOR = 0;
+
+    for (int i = 0; i < arr.size(); i++)
+    {
+        XOR = XOR^arr[i];
+    }
+
+    return XOR;
+    
+}
+
+int main(){
+
+    vector<int> arr = {1,1,2,3,3,4,4};
+
+    cout<<"Using Brute Way : " << usingBruteMethod(arr) << endl;
+    cout<<"Using Optimal Way : " << usingOptimalMethod(arr) << endl;
+
 }
