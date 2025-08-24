@@ -2,6 +2,7 @@
 
 
 #include<iostream>
+#include<map>
 using namespace std;
 
 
@@ -28,9 +29,21 @@ int usingBruteMethod(vector<int> &arr){
 //SC - O(1)
 
 
-// int usingBetterMethod(vector<int> &arr){
+int usingBetterMethod(vector<int> &arr){
+    unordered_map<long long , int> mp;
 
-// }
+    for(int i = 0; i<arr.size(); i++ ){ 
+        mp[arr[i]]++;
+    }
+
+    for(auto it :  mp){
+        if(it.second == 1){
+            return it.first;
+        }
+    }
+
+
+}
 
 int usingOptimalMethod(vector<int> &arr){
     int XOR = 0;
@@ -49,6 +62,7 @@ int main(){
     vector<int> arr = {1,1,2,3,3,4,4};
 
     cout<<"Using Brute Way : " << usingBruteMethod(arr) << endl;
+    cout<<"Using Better Way : " << usingBetterMethod(arr) << endl;
     cout<<"Using Optimal Way : " << usingOptimalMethod(arr) << endl;
 
 }
