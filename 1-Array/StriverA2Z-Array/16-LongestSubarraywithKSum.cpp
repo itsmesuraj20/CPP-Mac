@@ -24,8 +24,9 @@ void generateSubArrayBruteMethod(vector<int> &arr){
 }
 
 
-void generateSubArrayRecursively(vector<int>& arr, int start, int end) {
+void generateSubArrayRecursively(vector<int>& arr, int start, int end) 
 
+{
     // Stop if we have reached the end of the array
     if (end == arr.size())
         return;
