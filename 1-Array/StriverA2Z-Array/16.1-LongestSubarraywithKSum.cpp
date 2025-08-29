@@ -20,7 +20,6 @@ void longestSubArrayBruteMethod(vector<int> &arr , int K){
              cout<<s<<endl;
              
         }
-        
     }
 }
 
