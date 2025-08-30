@@ -21,7 +21,6 @@ void longestSubArrayBruteMethod(vector<int> &arr , int K){
         }
     }
 }
-
 int main(){
 
     vector<int> arr = {1,2,3,1,1,1,1,4,2,3};
