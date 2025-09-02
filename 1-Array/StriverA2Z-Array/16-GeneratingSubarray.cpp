@@ -12,7 +12,9 @@ Formula to determine the total number of subarray
 */
 
 void generateSubArrayBruteMethod(vector<int> &arr){
+
     int n = arr.size();
+    
     for (int i = 0; i < n; i++) // O(n)
     {
         for (int j = i; j < n; j++) //O(n)
