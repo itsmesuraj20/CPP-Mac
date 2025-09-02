@@ -13,11 +13,11 @@ Formula to determine the total number of subarray
 
 void generateSubArrayBruteMethod(vector<int> &arr){
     int n = arr.size();
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) // O(n)
     {
-        for (int j = i; j < n; j++)
+        for (int j = i; j < n; j++) //O(n)
         {
-             for (int k = i; k <= j; k++)
+             for (int k = i; k <= j; k++)//O(n)
                 cout << arr[k] << " ";
             cout << endl;
         }
