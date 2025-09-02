@@ -25,6 +25,26 @@ void generateSubArrayBruteMethod(vector<int> &arr){
 }
 
 
+void generateSubArrays(vector<int> &arr) {
+/* 
+
+If you want the code to stay O(n²), you cannot print every element of every subarray (that forces O(n³)).
+
+Instead, you can print the indices (i, j) that represent the subarray, or just store them.
+
+
+*/
+
+    int n = arr.size();
+    for (int i = 0; i < n; i++) {
+        for (int j = i; j < n; j++) {
+            // O(1) work instead of O(n)
+            cout << "Subarray from index " << i << " to " << j << endl;
+        }
+    }
+}
+
+
 void generateSubArrayRecursively(vector<int>& arr, int start, int end) 
 
 {
