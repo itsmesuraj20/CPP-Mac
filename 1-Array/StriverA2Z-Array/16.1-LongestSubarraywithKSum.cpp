@@ -3,7 +3,6 @@ using namespace std;
 
 void longestSubArrayBruteMethodYT(vector<int> &arr, int K){
    //By striver
-
     int n = arr.size();
     int len = 0;
 
@@ -26,7 +25,7 @@ void longestSubArrayBruteMethodYT(vector<int> &arr, int K){
 
 
 void longestSubArrayBruteMethod(vector<int> &arr , int K) {
-    //ChatGPT with indices
+    //ChatGPT with indices  : to show the in
     
     int n = arr.size();
     int len = 0;
