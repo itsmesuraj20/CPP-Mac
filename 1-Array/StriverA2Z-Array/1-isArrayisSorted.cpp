@@ -15,7 +15,7 @@ int main(){
     //This is the method to find the size of the array.
     int n = sizeof(arr1)/sizeof(arr1[0]);
 
-    cout<<n<<endl;
+    // cout<<n<<endl;
 
     //handle edge cases
     if(n == 0){
