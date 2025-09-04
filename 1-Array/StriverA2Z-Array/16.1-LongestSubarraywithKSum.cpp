@@ -68,5 +68,4 @@ int main()
     longestSubArrayBruteMethod(arr, k);
 
     return 0;
-    
 }
