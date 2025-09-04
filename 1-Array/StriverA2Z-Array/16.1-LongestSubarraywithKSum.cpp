@@ -25,7 +25,7 @@ void longestSubArrayBruteMethodYT(vector<int> &arr, int K){
 
 
 void longestSubArrayBruteMethod(vector<int> &arr , int K) {
-    //ChatGPT with indices  : to show the in
+    //ChatGPT with indices  : to show the index as well
     
     int n = arr.size();
     int len = 0;
