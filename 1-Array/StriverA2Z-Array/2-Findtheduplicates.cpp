@@ -12,6 +12,7 @@ From coding Ninjas
 
 
 /*
+
 Quick Revision -
 
 Brute : 
