@@ -34,7 +34,7 @@ int checkBrutev1(vi arr){
     for(int i = 0 ; i < n ; i++){
         for(int j = i+1; j<n ; j++){
             if(arr[i] == arr[j]){
-                return ans;
+                return arr[i];
             }
         }
     }
@@ -63,8 +63,8 @@ int checkBrutev2(vi arr){
 }
 
 int main(){
-    // vi arr = {5,1,2,3,4,4,9,0};
-    vi arr = {1,2,3,4,5};
+    vi arr = {5,1,2,3,4,4,9,0};
+    // vi arr = {1,2,3,4,5};
 
     int ans = checkBrutev1(arr);
 
