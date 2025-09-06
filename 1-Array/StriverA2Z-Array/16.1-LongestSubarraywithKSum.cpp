@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define endl "\n"
 
 void longestSubArrayBruteMethodYT(vector<int> &arr, int K){
    //By striver
@@ -14,8 +15,10 @@ void longestSubArrayBruteMethodYT(vector<int> &arr, int K){
             for (int k = i; k <= j; k++)
                 s += arr[k];
 
-            if (s == K)
+            if (s == K){
                 len = max(len, j - i + 1);
+                cout<<len<<endl;
+            }
         }
     }
 
@@ -64,7 +67,9 @@ int main()
     vector<int> arr = {1, 2, 3, 1, 1, 1, 1, 4, 2, 3};
     int k = 5;
 
-    longestSubArrayBruteMethod(arr, k);
+    // longestSubArrayBruteMethod(arr, k);
+    longestSubArrayBruteMethodYT(arr,k);
+    
 
     return 0;
 }
