@@ -12,12 +12,17 @@ void longestSubArrayBruteMethodYT(vector<int> &arr, int K){
         for (int j = i; j < n; j++)
         {
             int s = 0;
-            for (int k = i; k <= j; k++)
+            for (int k = i; k <= j; k++){
+                cout<<"Before s : " << s <<endl;
                 s += arr[k];
+                cout<<"After s : " << s <<endl;
+                
+            }
 
             if (s == K){
+                cout<<"Before len : " <<len<<endl;
                 len = max(len, j - i + 1);
-                cout<<len<<endl;
+                cout<<"After len : " <<len << endl;
             }
         }
     }
@@ -64,8 +69,9 @@ void longestSubArrayBruteMethod(vector<int> &arr , int K) {
 
 int main()
 {
-    vector<int> arr = {1, 2, 3, 1, 1, 1, 1, 4, 2, 3};
-    int k = 5;
+    // vector<int> arr = {1, 2, 3, 1, 1, 1, 1, 4, 2, 3};
+    vector<int> arr = {1,2,3};
+    int k = 6;
 
     // longestSubArrayBruteMethod(arr, k);
     longestSubArrayBruteMethodYT(arr,k);
