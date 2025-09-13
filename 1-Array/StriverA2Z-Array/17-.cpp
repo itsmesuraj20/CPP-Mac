@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-void brute_()
+void brute_() {
+    
+}
 
 int main(){
 
