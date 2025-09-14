@@ -4,7 +4,9 @@ void brute_() {
 
 }
 
-void better_
+void better_() {
+    
+}
 
 
 int main(){
