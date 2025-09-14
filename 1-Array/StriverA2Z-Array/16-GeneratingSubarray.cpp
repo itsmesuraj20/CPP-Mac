@@ -72,6 +72,7 @@ void generateSubArrayRecursively(vector<int>& arr, int start, int end)
 
 
 int main(){
+
     vector<int> arr = {1,2,3,1,1,1,1,4,2,3};
 
 
@@ -81,4 +82,5 @@ int main(){
     
 
     return 0;
+    
 }
