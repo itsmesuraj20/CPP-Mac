@@ -2,7 +2,38 @@
 using namespace std;
 #define endl "\n"
 
-void longestSubArrayBetterMethod(vector<int> arr, int K) {
+void longestSubArrayBetterMethod(vector<int> arr , int K){
+    //using hashmap
+    //O(N) time complexity
+    //O(N) space complexity
+
+    int n = arr.size();
+
+    unordered_map<int, int> mp; // to store the first occurrence of each prefix sum
+    int prefixSum = 0;
+    int maxLength = 0;
+
+    for (int i = 0; i < n; i++) {
+        prefixSum += arr[i];
+
+        if (prefixSum == K) {
+            maxLength = i + 1; // Update maxLength if the prefix sum equals K
+        }
+
+        if (mp.find(prefixSum) == mp.end()) {
+            mp[prefixSum] = i; // Store the first occurrence of the prefix sum
+        }
+
+        if (mp.find(prefixSum - K) != mp.end()) {
+            maxLength = max(maxLength, i - mp[prefixSum - K]); // Update maxLength if a subarray with sum K is found
+        }
+    }
+
+    cout << "Longest Subarray Length = " << maxLength << endl;
+
+}
+
+void longestSubArrayBruteBetterMethod(vector<int> arr, int K) {
     // By Striver
     auto start = chrono::high_resolution_clock::now(); // START TIMER
 
@@ -91,6 +122,7 @@ int main() {
 
     // longestSubArrayBruteMethod(arr, k);
     // longestSubArrayBruteMethodYT(arr, k);
+    // longestSubArrayBruteBetterMethod(arr, k);
     longestSubArrayBetterMethod(arr, k);
 
     return 0;
