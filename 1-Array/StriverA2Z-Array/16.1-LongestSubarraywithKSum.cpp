@@ -28,7 +28,6 @@ void longestSubArrayBetterMethod(vector<int> arr , int K){
             maxLength = max(maxLength, i - mp[prefixSum - K]); // Update maxLength if a subarray with sum K is found
         }
     }
-
     
     cout << "Longest Subarray Length = " << maxLength << endl;
 
