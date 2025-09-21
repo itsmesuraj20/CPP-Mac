@@ -2,8 +2,32 @@
 using namespace std;
 #define endl "\n"
 
+/*
+
+Longest SubArray with K Sum 
+Here is the list of variation of Longest SubArray with K Sum problems:
+1- Longest SubArray with K Sum (Positive Numbers)
+2- Longest SubArray with K Sum (Negative Numbers)
+3- Longest SubArray with K Sum (Positive + Negative Numbers)
+4- Longest SubArray with K Sum (Circular Array)
+5- Longest SubArray with K Sum (Binary Array)
+6- Longest SubArray with K Sum (2D Array)
+7- Longest SubArray with K Sum (Count of such SubArrays)
+8- Longest SubArray with K Sum (Print all such SubArrays)
+9- Longest SubArray with K Sum (Smallest such SubArray)
+10- Longest SubArray with K Sum (Largest such SubArray)
+11- Longest SubArray with K Sum (Count of such SubArrays)
+12- Longest SubArray with K Sum (Print all such SubArrays)
+13- Longest SubArray with K Sum (Smallest such SubArray)
+14- Longest SubArray with K Sum (Largest such SubArray)
+15- Longest SubArray with K Sum (Count of such SubArrays)
+
+*/
+
+
 void longestSubArrayBetterMethod(vector<int> arr , int K){
-    //using hashmap
+    //using hashmap by Striver ( Takeuforward )
+
     //O(N) time complexity
     //O(N) space complexity
 
@@ -19,6 +43,7 @@ void longestSubArrayBetterMethod(vector<int> arr , int K){
         if (prefixSum == K) {
             maxLength = i + 1; // Update maxLength if the prefix sum equals K
         }
+
 
         if (mp.find(prefixSum) == mp.end()) {
             mp[prefixSum] = i; // Store the first occurrence of the prefix sum
