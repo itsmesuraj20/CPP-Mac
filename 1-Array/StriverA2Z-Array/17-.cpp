@@ -8,6 +8,11 @@ void better_() {
     
 }
 
+void optimal_() {
+    
+}
+
+
 
 int main(){
 
