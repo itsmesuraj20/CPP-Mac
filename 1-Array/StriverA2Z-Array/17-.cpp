@@ -12,7 +12,6 @@ void optimal_() {
     
 }
 
-
 int main(){
 
 
