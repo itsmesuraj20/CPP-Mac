@@ -9,15 +9,14 @@ and break kr jao . Return the answer.
 */
 
 int main(){
-
     int arr1[] = {1,5,6,7,2,3,9};
 
     //This is the method to find the size of the array.
     int n = sizeof(arr1)/sizeof(arr1[0]);
 
     // cout<<n<<endl;
-
     //handle edge cases
+    
     if(n == 0){
         cout<<"Array is Empty";
     }
