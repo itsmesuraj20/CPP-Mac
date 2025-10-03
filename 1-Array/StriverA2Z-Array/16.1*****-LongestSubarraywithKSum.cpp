@@ -1,3 +1,11 @@
+
+/**** Mean need to be learned again with Youtube or AI
+
+Video - https://www.youtube.com/watch?v=frf7qxiN2qU&list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB&index=4
+
+*/
+
+
 #include <bits/stdc++.h>
 using namespace std;
 #define endl "\n"
