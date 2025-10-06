@@ -19,7 +19,8 @@ void brute_MajorityElement(vector<int> &arr){ // *Revise this
             } 
         }
             if(cnt > check) {
-                ans = cnt;
+                ans = arr[i];
+                break;
             } ;
     }
     if(ans != -1)
@@ -42,21 +43,54 @@ void better_MajorityElement(vector<int> &arr){
 
     for(auto &it : map){
         if(it.second > (n/2)) {
+            cout<<"Better : "<<endl;
             cout<<it.first<<endl;
             return;
         }
     }
 }
 
+int optimal_MajorityElement(vector<int> &arr){
+    int cnt = 0;
+    int el;
+    int n = arr.size();
+    for(int i = 0 ; i < n ;i++){
+        if(cnt == 0){
+            el = arr[i];
+            cnt++;
+        }
+
+        else if(el == arr[i]){
+            cnt++;
+        }
+
+        else{
+            cnt--;
+        }
+    }
+
+//Must to verify the element that we got from this Moore Voting Algorithm 
+    int c = 0;
+    for(int i = 0 ; i < n ; i++){
+        if(arr[i] == el) c++;
+    }
+    
+    if(c > n/2){
+        return el;
+    }
+
+    return -1;
+}
+
 int main(){
 
     // vector<int> arr = {1,2,1,1,2,2,3,1,2,3};
-    vector<int> arr = {3,2,3};
+    vector<int> arr = {3,2,2,2,2,3};
    
-    cout<<arr.size()<<endl;
+    // cout<<arr.size()<<endl;
 
 
     brute_MajorityElement(arr);
     // better_MajorityElement(arr);
-    // optimal_MajorityElement(arr);
+    // cout<<"Ans: "<<optimal_MajorityElement(arr);
 }
