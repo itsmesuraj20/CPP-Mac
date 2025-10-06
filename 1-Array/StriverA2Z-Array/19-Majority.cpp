@@ -3,10 +3,10 @@
 
 // Algorithm used : Moore's Voting Algorithm
 
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
-void brute_MajorityElement(vector<int> &arr){
+void brute_MajorityElement(vector<int> &arr){ // *Revise this 
     
     int n = arr.size();
     int check = n/2;
@@ -26,14 +26,32 @@ void brute_MajorityElement(vector<int> &arr){
     cout<<"Ans : " <<ans <<endl; 
     else
     cout<<"No element available"<<endl;
-
    
 }
 
 
+void better_MajorityElement(vector<int> &arr){
+
+    int n = arr.size();
+
+    unordered_map<int,int> map;
+
+    for(int i = 0; i < n ; i++){
+        map[arr[i]]++;
+    }
+
+    for(auto &it : map){
+        if(it.second > (n/2)) {
+            cout<<it.first<<endl;
+            return;
+        }
+    }
+}
+
 int main(){
 
-    vector<int> arr = {1,2,1,1,2,2,3,1,2,3};
+    // vector<int> arr = {1,2,1,1,2,2,3,1,2,3};
+    vector<int> arr = {3,2,3};
    
     cout<<arr.size()<<endl;
 

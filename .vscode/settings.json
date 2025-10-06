@@ -17,7 +17,14 @@
         "queue": "cpp",
         "stack": "cpp",
         "variant": "cpp",
-        "__node_handle": "cpp"
+        "__node_handle": "cpp",
+        "__tree": "cpp",
+        "regex": "cpp",
+        "__hash_table": "cpp",
+        "array": "cpp",
+        "bitset": "cpp",
+        "initializer_list": "cpp",
+        "valarray": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
