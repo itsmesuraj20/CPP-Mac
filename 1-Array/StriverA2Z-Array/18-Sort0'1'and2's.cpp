@@ -1,4 +1,8 @@
-// TC  -
+//LC : https://leetcode.com/problems/sort-colors/
+//Algorithm : Dutch National Flag Algorithm 
+
+
+//
 // O(1) < O(log N) < O(N) < O(N logN) < O(N2) < O(2^N) < O(N!)
 
 /*
@@ -46,9 +50,9 @@ void betterMethod(vector<int> &arr)
             count2s;
     }
 
-    cout << " 0 : " << count0s << endl;
-    cout << " 1 : " << count1s << endl;
-    cout << " 2 : " << count2s << endl;
+    // cout << " 0 : " << count0s << endl;
+    // cout << " 1 : " << count1s << endl;
+    // cout << " 2 : " << count2s << endl;
     
     for (int i = 0; i < count0s; i++)
     {
@@ -75,16 +79,40 @@ void betterMethod(vector<int> &arr)
 
 void optimalMethod(vector<int> &arr)
 {
+    
     int n = arr.size();
 
-    cout << endl
-         << "wait from op";
+    int low = 0, high = n-1, mid = 0;
+    while(mid <= high)
+    {
+        if(arr[mid] == 0) {
+            swap(arr[low],arr[mid]);
+            low++;
+            mid++;
+        }
+
+        else if(arr[mid] == 1) mid++;
+
+        else {
+            swap(arr[mid],arr[high]);
+            high--;
+        }
+    }
+
+
+    for(auto i : arr){
+        cout<< i <<" ";
+    }
+
+    cout<<"\n";
+    
 }
 
 int main()
 {
 
     vector<int> arr = {1, 0, 2, 0, 1, 2, 0, 2, 1, 0, 0, 1, 1, 2, 0, 1, 1, 1, 0, 2, 1};
+    // vector<int> arr = {2,0,1};
 
     bruteMethod(arr);
     betterMethod(arr);
