@@ -43,11 +43,11 @@ int better_MaximumSubArray(vector<int> &arr)
     for (int i = 0; i < n; i++)
     {
         int sum = 0;
-        for (int j = 0; j < n; j++)
+        for (int j = i; j < n; j++)
         {
             sum += arr[j];
+            maxi = max(maxi, sum);
         }
-        maxi = max(maxi, sum);
     }
 
     return maxi;
@@ -75,23 +75,32 @@ int optimal_MaximumSubArray(vector<int> &arr)
 }
 
 void unknown(vector<int> &arr){
+
     //Kadane Algorithm 
+
     int maxi = INT_MIN;
     int sum = 0;
+    int ansStart ,ansEnd, start ;
 
     for (int i = 0; i < arr.size(); i++)
     {
-        if(sum == 0) int start = i;
+        if(sum == 0) start = i; //Potential new subarray
+
         sum += arr[i];
 
         if(sum > maxi){
             maxi = sum ;
-            int ansStart = start, ansEnd = i;
+            ansStart = start;
+            ansEnd = i;
         }
-        if(sum < 0) sum = 0;
+
+        if(sum < 0) 
+        sum = 0;
+
     }
 
-    return maxi;   
+    cout << "Max Sum = " << maxi << endl;
+    cout << "Subarray indices: " << ansStart << " to " << ansEnd << endl; 
 }
 
 
@@ -99,11 +108,16 @@ int main()
 {
 
     vector<int> arr = { -2,1,-3,4,-1,2,1,-5,4 };
+    // for (int i = 0; i < arr.size(); i++) {
+    //     cout << arr[i] << "  ->  " << i << endl;
+        
+    // }
     // vector<int> arr = {5, 4, -1, 7};
 
-    // cout << brute_MaximumSubArray(arr);
-    // cout<<better_MaximumSubArray(arr);
-    cout<<optimal_MaximumSubArray(arr);
+    cout <<"Brute : "<<brute_MaximumSubArray(arr)<<endl;
+    cout<<"Better : "<<better_MaximumSubArray(arr)<<endl;
+    cout<<"Optimal : "<<optimal_MaximumSubArray(arr)<<endl;
+    unknown(arr);
 
     return 0;
 }
