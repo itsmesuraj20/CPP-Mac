@@ -107,7 +107,8 @@ void unknown(vector<int> &arr){
 int main()
 {
 
-    vector<int> arr = { -2,1,-3,4,-1,2,1,-5,4 };
+    // vector<int> arr = { -2,1,-3,4,-1,2,1,-5,4 };
+    vector<int> arr = {-3, -5, -1, -7};
     // for (int i = 0; i < arr.size(); i++) {
     //     cout << arr[i] << "  ->  " << i << endl;
         
@@ -117,6 +118,7 @@ int main()
     cout <<"Brute : "<<brute_MaximumSubArray(arr)<<endl;
     cout<<"Better : "<<better_MaximumSubArray(arr)<<endl;
     cout<<"Optimal : "<<optimal_MaximumSubArray(arr)<<endl;
+    
     unknown(arr);
 
     return 0;
