@@ -24,7 +24,8 @@ int main(){
         cout<<"Array is Sorted";
     }
 
-    else{
+    else
+    {
     bool result = true;
     for (int i = 1; i < n; i++)
     {
@@ -39,5 +40,6 @@ int main(){
     
     else 
     cout<<"Not Sorted" <<endl;
+    
     }
 }
