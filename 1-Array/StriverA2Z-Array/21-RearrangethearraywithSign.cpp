@@ -40,9 +40,11 @@ vector<int> brute_reArrange(vector<int> &arr){
     
 }
 
-// vector<int> optimal_reArrange(vector<int> &arr){
+vector<int> optimal_reArrange(vector<int> &arr){
 
-// }
+    
+
+}
 
 
 int main(){
