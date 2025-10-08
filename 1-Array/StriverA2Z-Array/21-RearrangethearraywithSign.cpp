@@ -21,7 +21,7 @@ vector<int> brute_reArrange(vector<int> &arr){
 
     for (int i = 0; i < n; i++)
     {
-        if(i == (n%2 == 0)){
+        if(arr[i] > 0 ){
             posArr.push_back(arr[i]);
         }
         else{
@@ -31,15 +31,18 @@ vector<int> brute_reArrange(vector<int> &arr){
 
     for (int i = 0; i < n; i++)
     {
-        arr[2*i] = arr[]
+        arr[2*i] = posArr[i];
+        arr[2*i + 1] = negArr[i];
     }
-    
+
+
+   return arr;
     
 }
 
-vector<int> optimal_reArrange(vector<int> &arr){
+// vector<int> optimal_reArrange(vector<int> &arr){
 
-}
+// }
 
 
 int main(){
