@@ -9,68 +9,80 @@ The only possible way to rearrange them such that they satisfy all conditions is
 Other ways such as [1,-2,2,-5,3,-4], [3,1,2,-2,-5,-4], [-2,3,-5,1,-4,2] are incorrect because they do not satisfy one or more conditions.  
 */
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-
-vector<int> brute_reArrange(vector<int> &arr){
+// Brute force approach: O(N) time, O(N) space
+// Separates positive and negative numbers into two arrays, then merges them
+vector<int> BruteForceRearrange(const vector<int>& arr) {
     int n = arr.size();
-
-    vector<int> posArr; 
-    vector<int> negArr; 
-
-    for (int i = 0; i < n; i++)
-    {
-        if(arr[i] > 0 ){
-            posArr.push_back(arr[i]);
-        }
-        else{
-            negArr.push_back(arr[i]);
-        }
-    }
-
-    for (int i = 0; i < n/2; i++)
-    {
-        arr[2*i] = posArr[i];
-        arr[2*i + 1] = negArr[i];
-    }
-
-   return arr;
+    vector<int> result = arr;  // Create a copy to avoid modifying original
     
+    vector<int> positive_numbers; 
+    vector<int> negative_numbers; 
+
+    // Separate positive and negative numbers
+    for (int i = 0; i < n; i++) {
+        if (result[i] > 0) {
+            positive_numbers.push_back(result[i]);
+        } else {
+            negative_numbers.push_back(result[i]);
+        }
+    }
+
+    // Merge them in alternating positions
+    for (int i = 0; i < n / 2; i++) {
+        result[2 * i] = positive_numbers[i];
+        result[2 * i + 1] = negative_numbers[i];
+    }
+
+    return result;
 }
 
-vector<int> optimal_reArrange(vector<int> &arr){
-
+// Optimal approach: O(N) time, O(N) space
+// Single pass solution using two pointers
+vector<int> OptimalRearrange(const vector<int>& arr) {
     int n = arr.size();
-    int pos = 0;
-    int neg = 1;
+    
+    int positive_index = 0;
+    int negative_index = 1;
+    
+    vector<int> result(n);
 
-    vector<int> ans(n);
-
-    for(int i = 0; i< n ;i++){
-        if(arr[i] > 0)
-        {
-            ans[pos] = arr[i];
-            pos += 2;
-        }
-        else{
-            ans[neg] = arr[i];
-            neg += 2;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] > 0) {
+            result[positive_index] = arr[i];
+            positive_index += 2;
+        } else {
+            result[negative_index] = arr[i];
+            negative_index += 2;
         }
     }
 
-    return ans;
-
+    return result;
 }
 
-
-int main(){
-    vector<int> arr = {3,-2,1,-5,2,-4};
-    // vector<int> ans = brute_reArrange(arr);
-    vector<int> ans = optimal_reArrange(arr);
-
-    for(int i : ans){
-        cout<< i <<" " ;
+// Helper function to print array
+void PrintArray(const vector<int>& arr) {
+    for (int num : arr) {
+        cout << num << " ";
     }
+    cout << endl;
+}
 
+int main() {
+    vector<int> arr = {3, -2, 1, -5, 2, -4};
+    
+    cout << "Original Array: ";
+    PrintArray(arr);
+    
+    cout << "\nBrute Force Approach: ";
+    vector<int> brute_result = BruteForceRearrange(arr);
+    PrintArray(brute_result);
+    
+    cout << "Optimal Approach: ";
+    vector<int> optimal_result = OptimalRearrange(arr);
+    PrintArray(optimal_result);
+
+    return 0;
 }
