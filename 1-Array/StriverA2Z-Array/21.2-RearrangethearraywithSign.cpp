@@ -66,7 +66,7 @@ vector<int> BruteForceSolutionByStriver(vector<int> &arr){
 
     //Filtering according to the element sign.
     for(int i = 0 ; i < n ; i++){
-        if(arr[i] > 0) pos.push_back(arr[i]);
+        if(arr[i] >= 0) pos.push_back(arr[i]);
         else neg.push_back(arr[i]);
     }
 
@@ -89,12 +89,23 @@ vector<int> BruteForceSolutionByStriver(vector<int> &arr){
        ind++;
     }
 
+     for (int i = limit; i < neg.size(); i++){
+       ans[ind++] = neg[i];
+    }
+
     return ans;
 }
 
 int main(){
 
-    vector<int> arr = { 3,-2,-1,5,4,-3,9,-9};
+    // vector<int> arr = { 3,-2,-1,5,4,-3,9,-9};
+    vector<int> arr = {
+    1, -1, 2, -2, 3, -3,        // equal pos & neg
+    4, 5, -4,                     // extra positives
+    -5, -6,                       // extra negatives
+    0,                             // zero as positive
+    1000000, -999999               // large numbers
+};
 
     // vector<int> AnswerArray = BruteOnlySolution(arr);
     vector<int> AnswerArray = BruteForceSolutionByStriver(arr);
