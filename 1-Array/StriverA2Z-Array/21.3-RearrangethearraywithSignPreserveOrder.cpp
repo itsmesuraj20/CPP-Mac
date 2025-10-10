@@ -9,13 +9,15 @@ vector<int> SingleSolutionforthisQuestion(vector<int> &arr){
     int n = arr.size();
     
     int left = 0, right = n-1;
-    while(left < right){
+    while(left < right)
+    {
         while(left < n && arr[left] >  0)
         {
             left++;
         }
 
-        while(right >= 0 && arr[right] < 0){
+        while(right >= 0 && arr[right] < 0)
+        {
             right--;
         }
 
