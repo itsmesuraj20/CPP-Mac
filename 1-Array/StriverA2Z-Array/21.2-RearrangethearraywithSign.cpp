@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Question say that the number of psitive and negative elements are not same like the previous one;
 
 //[-1,2,3,4,-3,1]
 //[2,-1,3,-3,4,1]
