@@ -8,12 +8,15 @@ Video - https://www.youtube.com/watch?v=frf7qxiN2qU&list=PLgUwDviBIf0rENwdL0nEH0
 
 #include <bits/stdc++.h>
 using namespace std;
+
 #define endl "\n"
 
 /*
 
 Longest SubArray with K Sum 
+
 Here is the list of variation of Longest SubArray with K Sum problems:
+
 1- Longest SubArray with K Sum (Positive Numbers)
 2- Longest SubArray with K Sum (Negative Numbers)
 3- Longest SubArray with K Sum (Positive + Negative Numbers)
@@ -66,7 +69,6 @@ Here is the list of variation of Longest SubArray with K Sum problems:
 50- Longest Subarray with K Sum (Greedy Approach)
 51- Longest Subarray with K Sum (Divide and Conquer)
 52- Longest Subarray with K Sum (Bit Manipulation)
-
 
 */
 
