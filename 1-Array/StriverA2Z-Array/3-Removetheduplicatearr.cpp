@@ -76,6 +76,7 @@ vector<int> optimizedMethod_RemoveDuplicatesWithElement(vector<int> &arr){
     //SC -O(1)
 
     int i = 0;
+
     for(int j = 0;j<arr.size();j++){ 
         if(arr[i] != arr[j]){
             arr[i+1] = arr[j];
@@ -84,6 +85,7 @@ vector<int> optimizedMethod_RemoveDuplicatesWithElement(vector<int> &arr){
     }
 
     return arr;
+
 }
 
 
@@ -97,11 +99,15 @@ int main(){
         cout<<"Must have 1 value to proceed"<<endl;
     }
 
-    else{
+    else
+    {
     // cout<<"Brute Method : " << bruteMethod(arr)<<"\n";    
     cout<<"Optimized Method : " << optimizedMethod_RemoveDuplicates(arr)<<"\n";
-   vec optimizedMethod_RemoveDuplicatesWithElement(arr);
-    for(int i : arr) cout<<i << " ";
+    vec optimizedMethod_RemoveDuplicatesWithElement(arr);
+    
+    for(int i : arr)
+     cout<<i << " ";
+    
     }
 
     return 0; 
