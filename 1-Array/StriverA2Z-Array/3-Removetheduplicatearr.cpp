@@ -9,6 +9,7 @@ Output: 2, nums = [1,2,_]
 Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.
 It does not matter what you leave beyond the returned k (hence they are underscores).
 
+//For Sorted 
 
 Suraj Understanding : Basic you have to remove the duplicate element to single element and then return the unique from the array
 
@@ -60,34 +61,37 @@ int optimizedMethod_RemoveDuplicates(vector<int> &arr){
     //TC-O(n)
     //SC -O(1)
 
+    if(arr.empty()) return 0;
+
     int i = 0;
-    for(int j = 0;j<arr.size();j++){ 
+    for(int j = 1;j<arr.size();j++){ 
         if(arr[i] != arr[j]){
-            arr[i+1] = arr[j];
             i++;
+            arr[i] = arr[j];
         }
     }
 
     return i+1;
 }
-vector<int> optimizedMethod_RemoveDuplicatesWithElement(vector<int> &arr){
+vector<int> optimizedMethod_RemoveDuplicatesWithElement(vector<int> &arr) 
+{
+    // Edge case: empty array
+    if (arr.empty()) return {};
 
-    //TC-O(n)
-    //SC -O(1)
+    int i = 0;  // slow pointer
 
-    int i = 0;
-
-    for(int j = 0;j<arr.size();j++){ 
-        if(arr[i] != arr[j]){
-            arr[i+1] = arr[j];
+    // Traverse with fast pointer j
+    for (int j = 1; j < arr.size(); j++) {
+        if (arr[i] != arr[j]) {
             i++;
+            arr[i] = arr[j];
         }
     }
 
+    // Return only the unique part
+    arr.resize(i + 1);
     return arr;
-
 }
-
 
 int main(){
 
@@ -103,9 +107,9 @@ int main(){
     {
     // cout<<"Brute Method : " << bruteMethod(arr)<<"\n";    
     cout<<"Optimized Method : " << optimizedMethod_RemoveDuplicates(arr)<<"\n";
-    vec optimizedMethod_RemoveDuplicatesWithElement(arr);
+    vector<int> arrAns = optimizedMethod_RemoveDuplicatesWithElement(arr);
     
-    for(int i : arr)
+    for(int i : arrAns)
      cout<<i << " ";
     
     }
