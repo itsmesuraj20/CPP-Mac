@@ -1,13 +1,25 @@
+/*
+Largest and Second Largest 
+
+Brute - Better - Optimal
+
+*/
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int largestBruteMethod(vector<int> arr){
+
     sort(arr.begin(), arr.end());
     return arr.back();
     // TC - O(n log n), SC - O(1)
+
 }
 
-int secondLargestBruteMethod(vector<int> arr){
+int secondLargestBruteMethod(vector<int> arr)
+{
+
     sort(arr.begin(), arr.end());
     int largestSoFar = arr.back();
     for(int i = arr.size() - 2; i >= 0; i--){
@@ -17,9 +29,12 @@ int secondLargestBruteMethod(vector<int> arr){
     }
     return -1;
     // TC - O(n log n), SC - O(1)
+
 }
 
-int largestBetter(vector<int> arr){
+int largestBetter(vector<int> arr)
+{
+
     int largestSoFar = arr[0];
     for(int i = 1; i < arr.size(); i++){
         if(arr[i] > largestSoFar){
