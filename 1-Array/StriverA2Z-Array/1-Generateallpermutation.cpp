@@ -215,7 +215,6 @@ void generatePermutation(int index , vector<int> &nums, vector<vector<int>> &res
         return ;
     }
 
-
     for(int i = index ; i<n ; i++){
         swap(nums[index] , nums[i]);
         generatePermutation(index + 1, nums,result);
