@@ -208,6 +208,7 @@
 using namespace std;
 
 void generatePermutation(int index , vector<int> &nums, vector<vector<int>> &result ){
+   
     int n = nums.size();
     
     if(index == n){
@@ -216,7 +217,7 @@ void generatePermutation(int index , vector<int> &nums, vector<vector<int>> &res
     }
 
     for(int i = index ; i<n ; i++){
-        swap(nums[index] , nums[i]);
+             
         generatePermutation(index + 1, nums,result);
         swap(nums[index] , nums[i]);
     }
@@ -239,3 +240,4 @@ int main(){
 
     return 0;
 }
+
