@@ -51,6 +51,8 @@ void better_MajorityElement(vector<int> &arr){
 }
 
 int optimal_MajorityElement(vector<int> &arr){
+
+    //Moore Voting Algorithm
     int cnt = 0;
     int el;
     int n = arr.size();
