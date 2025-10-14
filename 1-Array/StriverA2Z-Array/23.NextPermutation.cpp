@@ -56,6 +56,10 @@ void better(vector<int> &arr)
 
 }
 
+void optimal(vector<int> &arr){
+
+}
+
 
 
 int main(){
@@ -68,6 +72,6 @@ int main(){
 
     brute(index, arr,result);
     better(arr);
-    // optimal();
+    optimal();
     return 0;
 }
