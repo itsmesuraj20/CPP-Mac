@@ -36,7 +36,7 @@ int brute(vector<int> &arr){
 
 
 int main(){
-    vector<int> arr = {104,102,5,4,100,1,101,3,2,1,1};
+    vector<int> arr = {104,102,4,100,1,101,3,2,1,1};
     
     cout<<brute(arr);
 
