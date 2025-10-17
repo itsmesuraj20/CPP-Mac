@@ -217,10 +217,8 @@ void generatePermutation(int index , vector<int> &nums, vector<vector<int>> &res
     }
 
     for(int i = index ; i<n ; i++){
-             
         generatePermutation(index + 1, nums,result);
         swap(nums[index] , nums[i]);
-        
     }
 }
 
