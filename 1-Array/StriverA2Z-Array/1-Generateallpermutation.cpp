@@ -220,6 +220,7 @@ void generatePermutation(int index , vector<int> &nums, vector<vector<int>> &res
              
         generatePermutation(index + 1, nums,result);
         swap(nums[index] , nums[i]);
+        
     }
 }
 
