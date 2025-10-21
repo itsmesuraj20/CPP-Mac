@@ -72,7 +72,9 @@ void printMatrix(vector<vector<int>> &arr){
     }
 }
 
-int main(){
+int main()
+{
+    
     vector<vector<int>> arr = {{1, 2, 3},{4, 0, 6},{7, 8, 9}};
 
     cout<<"Original Matrix: \n";
