@@ -206,7 +206,7 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-
+✅
 void generatePermutation(int index , vector<int> &nums, vector<vector<int>> &result ){
    
     int n = nums.size();

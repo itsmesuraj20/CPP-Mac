@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+✅
 void generateSubArrayBrute(vector<int> &arr)
 {
     int n = arr.size();
