@@ -23,15 +23,16 @@ TC - O(n^2)
 SC - O(1);
 
 Brute (version 2): 
-Mein unordered set bnao , usmein jo element ka count 2+ ho wo return krdo simple.
+Mein unordered map bnao , usmein jo element ka count 2+ ho wo return krdo simple.
 
 
 
 */
 
-int checkBrutev1(vi arr){
+
+int brute(vi arr){
     int n = arr.size();
-    int ans = -1;
+    // int ans = -1;
     for(int i = 0 ; i < n ; i++){
         for(int j = i+1; j<n ; j++){
             if(arr[i] == arr[j]){
@@ -43,7 +44,7 @@ int checkBrutev1(vi arr){
 }
 
 
-int checkBrutev2(vi arr){
+int optimal(vi arr){
     int n = arr.size();
 
    unordered_map<int,int> mp;
@@ -64,11 +65,13 @@ int checkBrutev2(vi arr){
 }
 
 int main(){
-    vi arr = {5,1,2,3,4,4,9,0};
+    // vi arr = {5,1,2,3,4,4,9,0};
+    vi arr = {2,3,4,5,6,6};
     // vi arr = {1,2,3,4,5};
 
-    int ans = checkBrutev1(arr);
-
+    int ans = brute(arr);
+    // int ans = optimal(arr);
+    
     if(ans == -1){
         cout<<"No Duplicate found";
     }
