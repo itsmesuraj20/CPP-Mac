@@ -37,6 +37,9 @@ int cols = arr[0].size();
 
 
 void optimal(vector<vector<int>> &arr){
+    
+    //V.V.V.V.V. Important isko 2-3 baar
+
     int m = arr.size();
     int n = arr[0].size();
 
@@ -101,14 +104,6 @@ void optimal(vector<vector<int>> &arr){
         }
         cout<<endl;
     }
-
-    // for(auto x : arr){
-    //     for(auto i : x){
-    //         cout<<i<<" ";
-    //     }
-    //     cout<<endl;
-    // }
-
 }
 
 
