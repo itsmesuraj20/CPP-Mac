@@ -17,7 +17,6 @@ void brute(vector<int> &arr ,int target){
     }
 
     cout<<c<<endl;
-
 }
 
 void better(vector<int> &arr ,int target){
