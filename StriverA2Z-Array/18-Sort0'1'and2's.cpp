@@ -79,6 +79,7 @@ void betterMethod(vector<int> &arr)
 
 void optimalMethod(vector<int> &arr)
 {
+    //Dutch National Flag Algorithm 
     
     int n = arr.size();
 
