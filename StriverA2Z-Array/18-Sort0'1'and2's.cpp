@@ -68,6 +68,7 @@ void betterMethod(vector<int> &arr)
     }
 
     for(auto i : arr){
+        
         cout<< i <<" ";
     }
 
