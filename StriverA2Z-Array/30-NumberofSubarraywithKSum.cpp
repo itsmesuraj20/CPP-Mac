@@ -15,7 +15,6 @@ void brute(vector<int> &arr ,int target){
             if(sum == target) c++;
         }
     }
-
     cout<<c<<endl;
 }
 
@@ -39,7 +38,7 @@ void better(vector<int> &arr ,int target){
 
     //TC- O(N*N)
     //SC- O(1)
-    
+
 }
 
 
