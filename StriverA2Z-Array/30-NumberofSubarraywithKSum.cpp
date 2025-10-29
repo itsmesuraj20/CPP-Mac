@@ -39,6 +39,7 @@ void better(vector<int> &arr ,int target){
 
     //TC- O(N*N)
     //SC- O(1)
+    
 }
 
 
