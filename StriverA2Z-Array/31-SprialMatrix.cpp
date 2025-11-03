@@ -2,7 +2,7 @@
 using namespace std;
 //Spiral Matrix
 int main(){
-int arr[] = {1,2,3};
+vector<vector<int>> arr = {{1,2,3},{4,5,6}};
 
     return 0;
 }
