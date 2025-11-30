@@ -14,7 +14,8 @@ vector<int> spiralMatrixFunction(vector<vector<int>> &arr){
     int top = 0,left = 0;
     int bottom = rows - 1, right = cols - 1;
 
-    while(top <= bottom && left <= right){
+    while(top <= bottom && left <= right)
+    {
         
         for (int i = left; i <= right; i++)
         {
