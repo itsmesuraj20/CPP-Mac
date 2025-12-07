@@ -14,7 +14,7 @@ int main()
         for (int x : nums)
             cout << x << " ";
         cout << endl;
-    }//next_permutation(arr);
+    }//next_permutation(arr,arr+n);
     while (next_permutation(nums.begin(), nums.end()));
 
 }
