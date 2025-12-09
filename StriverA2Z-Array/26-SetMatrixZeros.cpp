@@ -3,7 +3,7 @@ using namespace std;
 
 /*
 Question : Set Matrix Zero
-
+3 Solution 
 
 Static 2D 
 
