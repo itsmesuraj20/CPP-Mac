@@ -44,27 +44,30 @@ void betterMethod(vector<int> &arr)
     {
         if (arr[i] == 0)
             count0s++;
+
         if (arr[i] == 1)
-            count1s;
+            count1s++;
+
         if (arr[i] == 2)
-            count2s;
+            count2s++;
     }
 
-    // cout << " 0 : " << count0s << endl;
-    // cout << " 1 : " << count1s << endl;
-    // cout << " 2 : " << count2s << endl;
+    cout << " 0 : " << count0s << endl;
+    cout << " 1 : " << count1s << endl;
+    cout << " 2 : " << count2s << endl;
     
-    for (int i = 0; i < count0s; i++)
+    int c = 0;
+    for (int i = 0; i < count0s ; i++)
     {
-        arr[i] = 0;
+        arr[c] = 0; c++;
     }
 
-    for(int j = count0s ; j<count1s ; j++){
-        arr[j] = 1;
+    for(int i = 0 ; i <  count1s ; i++){
+        arr[c] = 1; c++;
     }
 
-    for(int k = count1s ; k<count2s ; k++){
-        arr[k] = 2;
+    for(int k = 0 ; k < count2s ; k++){
+        arr[c] = 2; c++;
     }
 
     for(auto i : arr){
@@ -117,10 +120,13 @@ int main()
 
     vector<int> arr = {1, 0, 2, 0, 1, 2, 0, 2, 1, 0, 0, 1, 1, 2, 0, 1, 1, 1, 0, 2, 1};
     // vector<int> arr = {2,0,1};
+    // vector<int> arr = { 1,1,2,0,0,1,2};
+    //  vector<int> arr = { 2,0,1,1};
 
-    bruteMethod(arr);
+
+    // bruteMethod(arr);
     betterMethod(arr);
-    optimalMethod(arr);
+    // optimalMethod(arr);
 
     return 0;
 }
