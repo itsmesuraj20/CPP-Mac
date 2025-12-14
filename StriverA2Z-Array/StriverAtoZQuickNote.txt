@@ -1,0 +1,6 @@
+18 - Sort 0'1' and 2'
+
+
+Brute - Use Sort Function to sort the array 
+Better - count 0s1s2s and for loop se print krwa do manually
+Optimal - use Dutch National Algorithm 
