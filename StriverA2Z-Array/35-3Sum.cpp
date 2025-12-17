@@ -1,10 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<vector<int>> Sumcheck_Brute(vector<int> &arr)
+vector<vector<int>> Sumcheck_Brute(vector<int> &nums)
 {
-    int n = arr.size();
-
+    int n = nums.size();
     set<vector<int>> st;
     for (int i = 0; i < n; i++)
     {
@@ -12,17 +11,20 @@ vector<vector<int>> Sumcheck_Brute(vector<int> &arr)
         {
             for (int k = j + 1; k < n; k++)
             {
-                if (arr[i] + arr[j] + arr[k] == 0)
+
+                if (nums[i] + nums[j] + nums[k] == 0)
                 {
-                    vector<int> temp = {arr[i], arr[j], arr[k]}; // Possible array ko store kiya hai 
-                    sort(temp.begin(), temp.end()); // Sort kiya jisse redundant value store na ho
-                    st.insert(temp); // set mein insert kr diya simple
+                    vector<int> temp = {nums[i], nums[j], nums[k]};
+                    sort(temp.begin(), temp.end());
+                    st.insert(temp);
                 }
             }
         }
     }
-    vector<vector<int>> ans(st.begin(), st.end()); // set internally keeps elements sorted and unique; this line just materializes that into a vector
+
+    vector<vector<int>> ans(st.begin(), st.end());
     return ans;
+
 }
 
 int main()
@@ -36,7 +38,7 @@ int main()
         {
             cout << i << " ";
         }
-        cout<<endl;
+        cout << endl;
     }
 
     return 0;
