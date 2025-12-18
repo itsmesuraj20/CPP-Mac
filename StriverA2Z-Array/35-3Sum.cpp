@@ -27,6 +27,10 @@ vector<vector<int>> Sumcheck_Brute(vector<int> &nums)
 
 }
 
+Sumcheck_Better(vector<int> &arr){
+    
+}
+
 int main()
 {
     vector<int> arr = {-1, 0, 1, 2, -1, -4};
