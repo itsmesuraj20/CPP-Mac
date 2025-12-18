@@ -69,6 +69,7 @@ void optimal(vector<vector<int>> &arr){
             }
         }
     }
+    
     //Step-3 :use set zero based on markers
     for (int i = 1; i < m; i++)
     {
@@ -95,7 +96,6 @@ void optimal(vector<vector<int>> &arr){
         }
     }
 
-
     //Step-5 :Output
     cout<<"\n After Set Matrix Zero : \n";
       for(int i = 0 ; i < m ;i++){
@@ -104,6 +104,7 @@ void optimal(vector<vector<int>> &arr){
         }
         cout<<endl;
     }
+
 }
 
 
