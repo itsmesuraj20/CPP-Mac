@@ -32,21 +32,8 @@ int secondLargestBruteMethod(vector<int> arr)
 
 }
 
-int largestBetter(vector<int> arr)
-{
-
-    int largestSoFar = arr[0];
-    for(int i = 1; i < arr.size(); i++){
-        if(arr[i] > largestSoFar){
-            largestSoFar = arr[i];
-        }
-    }
-    return largestSoFar;
-    // TC - O(n), SC - O(1)
-}
-
 int secondLargestBetter(vector<int> arr){
-    int largestSoFar = largestBetter(arr);
+    int largestSoFar = largestOptimal(arr);
     int secondLargestSoFar = INT_MIN;
     for(int i = 0; i < arr.size(); i++){
         if(arr[i] > secondLargestSoFar && arr[i] != largestSoFar){
@@ -57,7 +44,10 @@ int secondLargestBetter(vector<int> arr){
     // TC - O(n), SC - O(1)
 }
 
-int largestOptimal(vector<int> arr){
+int largestOptimal(vector<int> arr)
+{
+
+    //Interview Generic;
     int largestSoFar = arr[0];
     for(int i = 1; i < arr.size(); i++){
         if(arr[i] > largestSoFar){
@@ -65,7 +55,21 @@ int largestOptimal(vector<int> arr){
         }
     }
     return largestSoFar;
+
     // TC - O(n), SC - O(1)
+    
+    
+    //                                      OR
+
+    // int n = arr.size();
+    // int largest = arr[0];
+    
+    // for(int i = 0 ; i < n; i++ )
+    // {
+    //     largest = max(largest,arr[i]);
+    // }
+    // return largest;
+
 }
 
 int secondLargestOptimal(vector<int> arr){
