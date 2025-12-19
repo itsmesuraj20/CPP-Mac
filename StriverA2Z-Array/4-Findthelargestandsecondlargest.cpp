@@ -1,6 +1,9 @@
 /*
 Largest and Second Largest 
+Largest : 
+Brute - Optimal
 
+Second : 
 Brute - Better - Optimal
 
 */
@@ -48,7 +51,7 @@ int largestOptimal(vector<int> arr)
 {
 
     //Interview Generic;
-    
+
     int largestSoFar = arr[0];
     for(int i = 1; i < arr.size(); i++){
         if(arr[i] > largestSoFar){
