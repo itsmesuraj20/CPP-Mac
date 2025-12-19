@@ -38,6 +38,7 @@ int secondLargestBruteMethod(vector<int> arr)
 int secondLargestBetter(vector<int> arr){
     int largestSoFar = largestOptimal(arr);
     int secondLargestSoFar = INT_MIN;
+    
     for(int i = 0; i < arr.size(); i++){
         if(arr[i] > secondLargestSoFar && arr[i] != largestSoFar){
             secondLargestSoFar = arr[i];
