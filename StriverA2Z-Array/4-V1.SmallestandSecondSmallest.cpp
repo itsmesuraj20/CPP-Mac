@@ -80,7 +80,18 @@ int secondSmallestOptimal(vi &arr){
     int smallest = INT_MAX;
     int secondSmallest = INT_MAX;
 
-    
+    for(int i = 0 ; i < n ; i++){
+        if(smallest > arr[i]){
+            secondSmallest = smallest;
+            smallest = arr[i];
+        }
+
+        else if(arr[i] > smallest && arr[i] < secondSmallest)
+        {
+            secondSmallest = arr[i];
+        }
+    }
+    return secondSmallest ; 
 }
 
 int main()
@@ -91,6 +102,7 @@ int main()
     // cout << smallestBrute(arr) << endl;
     // cout << smallestOptimal(arr) << endl;
     // cout << secondSmallestBrute(arr) << endl;
-    cout << secondSmallestBetter(arr) << endl;
+    // cout << secondSmallestBetter(arr) << endl;
+    cout<<secondSmallestOptimal(arr)<<endl;
     return 0;
 }
