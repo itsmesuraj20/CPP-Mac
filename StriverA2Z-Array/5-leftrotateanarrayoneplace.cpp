@@ -3,7 +3,7 @@
 
 /*
 Question : Left Rotate an array one place
-
+No Brute
 */
 
 int main(){
