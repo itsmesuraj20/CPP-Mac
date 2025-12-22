@@ -4,6 +4,9 @@
 /*
 Question : Left Rotate an array one place
 No Brute
+No Better
+
+Only Optimal
 */
 
 int main(){
