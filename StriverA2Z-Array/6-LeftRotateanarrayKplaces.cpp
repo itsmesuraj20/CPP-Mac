@@ -6,22 +6,35 @@ using namespace std;
 
 vector<int> bruteRotate(vector<int> arr ,int d ){
     vector<int> temp;
+    int n = arr.size();
+
     for(int j = 0;j<d;j++){
+
         temp.push_back(arr[j]);
+
     }
 
-    for(int i = d;i<arr.size();i++){
+    for(int i = d;i < n;i++){
+
         arr[i-d] = arr[i];
+
     }
  
-   for(int a = arr.size() - d;a<arr.size(); a++){
-    arr[a] = temp[a-(arr.size() - d)];
-   
+   for(int a = n - d; a < n ; a++){
+
+    arr[a] = temp[a-(n - d)];
+
    }
 
    return arr;
+
 }
 
+vi better(vi arr , int d){
+    int n = arr.size();
+
+    
+}
 
 
 int main(){
