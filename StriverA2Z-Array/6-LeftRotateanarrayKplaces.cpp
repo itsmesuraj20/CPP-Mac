@@ -33,6 +33,8 @@ vector<int> bruteRotate(vector<int> arr ,int d ){
 vi better(vi arr , int d){
     int n = arr.size();
 
+    // d = d % n ;
+    //Formula which can take to reduce the complexity
     
 }
 
