@@ -5,6 +5,7 @@ using namespace std;
 
 
 vector<int> bruteRightRotate(vector<int> arr ,int d ){
+
     vector<int> temp;
     int n = arr.size();
     d=d%n;
@@ -28,6 +29,7 @@ vector<int> bruteRightRotate(vector<int> arr ,int d ){
         }
     
     return arr;
+    
 }
 
 vector<int> optimalRotate(vector<int> arr,int d){
