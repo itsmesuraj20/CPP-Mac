@@ -2,15 +2,16 @@
 using namespace std;
 
 int factorial( int n){
-    if(n == 1) return 1;
+    if( n<= 1) return 1;
 
     return n*factorial(n-1);
 }
 
-int summ(int n ,int sum = 0 ){
-    if(n < 0) return sum;
+int summ(int n ,int sum = 0 ){ // Yaha function ke andar sum = 0 bohot important ,kyunki function ke andar likha to wo baar baar sum ko 0 kar dega
 
-    summ(n-1,sum + n);
+    if(n == 0) return sum;
+
+    return summ(n-1,sum + n);
 }
 int main(){
 
