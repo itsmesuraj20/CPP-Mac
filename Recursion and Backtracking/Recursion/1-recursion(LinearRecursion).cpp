@@ -1,15 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// ============================================================================
+// PATTERN 1: LINEAR RECURSION (Most Common) [Easy to understand]
+// ============================================================================
+
 void print1toN(int n ) { 
-
-    if(n <= 0)
-        return ;
-
-    print1toN(n-1);
-    cout<<n<<" ";
-
-    //Basically what happens is 
+//Basically what happens is 
     /*
      n = 2
 
@@ -25,6 +22,13 @@ void print1toN(int n ) {
 
     
     */
+    if(n <= 0)
+        return ;
+
+    print1toN(n-1);
+    cout<<n<<" ";
+
+    
 }
 
 
@@ -45,13 +49,21 @@ int  sumofN(int n ){
 }
 
 
-int powN( int x , int n){
+int powN( int x , int n)
+{
     if(n == 0) return 1;
 
     return x*powN(x,n-1);
 }
 
+int countDigits(int n){
+    if( n == 0 )return 0;
 
+    abs(n);
+    if(n/10 == 0) return 1;
+
+    return 1+countDigits(n/10);
+}
 int main(){
    
     int n;
@@ -72,6 +84,9 @@ int main(){
     int power = powN(x,n );
     cout<<"Power : " << power<<endl;
 
+    int longNum = 900;
+    int count = countDigits(longNum);
+    cout<<"Count : "<<count<<endl;
 
     return 0;
 }
