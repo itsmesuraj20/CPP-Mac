@@ -7,7 +7,7 @@ void print1toN(int n ) {
         return ;
 
     print1toN(n-1);
-    cout<< n << endl;
+    cout<<n<<" ";
 
     //Basically what happens is 
     /*
@@ -33,19 +33,45 @@ void printNto1(int n){
     return ;
 
 
-    cout<<n<<endl;
+    cout<<n<<" ";
     printNto1(n-1);
 }
 
+
+int  sumofN(int n ){
+    if(n == 0) return 0;
+
+    return n + sumofN(n-1);
+}
+
+
+int powN( int x , int n){
+    if(n == 0) return 1;
+
+    return x*powN(x,n-1);
+}
+
+
 int main(){
    
-    int n ;
+    int n;
     cin>>n;
 
+    int x = 5;
 
     print1toN(n);
     cout<<endl;
+
     printNto1(n);
+    cout<<endl;
+
+    int sum = sumofN(n);
+    cout<<"Sum : " << sum << endl;
+
+    
+    int power = powN(x,n );
+    cout<<"Power : " << power<<endl;
+
 
     return 0;
 }
