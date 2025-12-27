@@ -2,13 +2,14 @@
 using namespace std;
 void bSearch(vector<int> &arr, int low, int right, int target)
 {
-
-    if (low > right) {
-    cout << "Not Found" << endl;
-    return;
+    // Base Case
+    if (low > right)
+    {
+        cout << "Not Found" << endl;
+        return;
     }
 
-    int mid = low + (right - low) / 2;
+    int mid = low + (right - low) / 2; // This is very important formula must need to take of this
 
     if (arr[mid] == target)
     {
@@ -22,13 +23,12 @@ void bSearch(vector<int> &arr, int low, int right, int target)
 
     else
         bSearch(arr, low, mid - 1, target);
-
 }
 int main()
 {
     vector<int> arr = {1, 5, 6, 7, 9};
     int target = 9;
     int n = arr.size();
-    bSearch(arr, 0,n-1, target);
+    bSearch(arr, 0, n - 1, target);
     return 0;
 }
