@@ -7,7 +7,7 @@ using namespace std;
 vector<int> bruteRotate(vector<int> &arr ,int d ){
    
     vector<int> temp; //Same in Rotating by one place , there we were storing one element because we are required to do one place rotation,and here we are required to rotate K element
-    
+
     int n = arr.size();
 
     for(int j = 0;j<d;j++){
@@ -23,11 +23,9 @@ vector<int> bruteRotate(vector<int> &arr ,int d ){
     }
  
    for(int a = n - d; a < n ; a++){
-
     arr[a] = temp[a-(n - d)];
 
    }
-
    return arr;
 
 }
