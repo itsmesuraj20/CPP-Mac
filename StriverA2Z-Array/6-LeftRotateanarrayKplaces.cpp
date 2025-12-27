@@ -11,23 +11,18 @@ vector<int> bruteRotate(vector<int> &arr ,int d ){
     int n = arr.size();
 
     for(int j = 0;j<d;j++){
-
         temp.push_back(arr[j]);
-
     }
 
     for(int i = d;i < n;i++){
-
         arr[i-d] = arr[i];
-
     }
  
    for(int a = n - d; a < n ; a++){
     arr[a] = temp[a-(n - d)];
-
    }
-   return arr;
 
+   return arr;
 }
 
 vi better(vi &arr , int d){

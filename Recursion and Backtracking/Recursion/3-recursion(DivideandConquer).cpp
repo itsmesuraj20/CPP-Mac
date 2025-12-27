@@ -20,7 +20,6 @@ void bSearch(vector<int> &arr, int low, int right, int target)
     else if (arr[mid] < target)
 
         bSearch(arr, mid + 1, right, target);
-
     else
         bSearch(arr, low, mid - 1, target);
 }
@@ -31,4 +30,4 @@ int main()
     int n = arr.size();
     bSearch(arr, 0, n - 1, target);
     return 0;
-}
+} 
