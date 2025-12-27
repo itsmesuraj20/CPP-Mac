@@ -4,6 +4,9 @@
 //Only Brute and Optimal Exist , no better
 using namespace std;
 
+//Brute Quick Recap: Normal jaise one Place rotation mein kiya tha waise yaha mein temp store kr do .
+//Optimal Quick Recap : reverse(a,a+d) , reverse(a+d, a+n) , reverse(a ,a+n);
+
 vector<int> bruteRotate(vector<int> arr ,int d ){
    //SC - O(n)
     vector<int> temp; //Same in Rotating by one place , there we were storing one element because we are required to do one place rotation,and here we are required to rotate K element
