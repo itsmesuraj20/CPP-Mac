@@ -2,8 +2,9 @@
 using namespace std;
 #define vi vector<int>
 
+// Brute Better Optimal
 
-vi brute1(vi nums){
+vi brute(vi nums){
     //By me 
     vi newArr;
 
@@ -18,10 +19,17 @@ vi brute1(vi nums){
 
     for (int i = 0; i < newArr.size(); i++)
         nums.push_back(newArr[i]);
+
+
+        return nums;
+
+    //TC : O(n²) (erase operation costly)
+    // SC : O(n)
+
 }
 
 
-vi brute2(vi nums){
+vi better(vi nums){
     //By striver
     vi newArr;
     int n = nums.size();
@@ -38,6 +46,10 @@ vi brute2(vi nums){
     nums[k] = 0;
 
     return nums;
+
+// TC : O(n)
+// SC : O(n)
+
 }
 
 vector<int> optimal(vi nums)
@@ -55,6 +67,8 @@ vector<int> optimal(vi nums)
         }
     }
 
+     if(j == -1) return nums;
+
     for (int i = j+1; i < n; i++)
     {
         if(nums[i] != 0){
@@ -64,6 +78,10 @@ vector<int> optimal(vi nums)
     }
     
     return nums;
+
+// TC : O(n)
+// SC : O(1) // Excluding input copy
+
     
 }
 
@@ -74,7 +92,8 @@ int main()
 
     vector<int> nums = {0,0,1};
 
-    vector<int> ans = brute2(nums);
+    vector<int> ans = brute(nums);
+    vector<int> ans = better(nums);
     vector<int> ansOptimal = optimal(nums);
 
     for (auto &&i : ansOptimal)
