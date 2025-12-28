@@ -52,7 +52,7 @@ vi better(vi nums){
 
 }
 
-vector<int> optimal(vi nums)
+vector<int> optimal(vi &nums)
 {
 
     int n = nums.size();
@@ -80,7 +80,7 @@ vector<int> optimal(vi nums)
     return nums;
 
 // TC : O(n)
-// SC : O(1) // Excluding input copy
+// SC : O(1) 
 
     
 }
