@@ -47,12 +47,15 @@ int bruteMethod(vector<int> &arr)
         setTable.insert(arr[i]);
     }
     
-    arr.clear();
 
-    for(auto it : setTable){
-       arr.push_back(it);  
-    }
-    return arr.size();
+    return setTable.size(); // Experimenting , might remove it later (only not if working )
+
+    // arr.clear();
+
+    // for(auto it : setTable){
+    //    arr.push_back(it);  
+    // }
+    // return arr.size();
 
  }
 
@@ -105,14 +108,15 @@ int main(){
 
     else
     {
-    // cout<<"Brute Method : " << bruteMethod(arr)<<"\n";    
-    cout<<"Optimized Method : " << optimizedMethod_RemoveDuplicates(arr)<<"\n";
-    vector<int> arrAns = optimizedMethod_RemoveDuplicatesWithElement(arr);
-    
-    for(int i : arrAns)
-     cout<<i << " ";
-    
+    cout<<"Brute Method : " << bruteMethod(arr)<<"\n";    
     }
+    // cout<<"Optimized Method : " << optimizedMethod_RemoveDuplicates(arr)<<"\n";
+    // vector<int> arrAns = optimizedMethod_RemoveDuplicatesWithElement(arr);
+    
+    // for(int i : arrAns)
+    //  cout<<i << " ";
+    
+    // }
 
     return 0; 
 }

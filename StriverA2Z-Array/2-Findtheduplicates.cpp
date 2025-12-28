@@ -22,7 +22,7 @@ howa to return ans; kar dena , nhi to return -1;
 TC - O(n^2)
 SC - O(1);
 
-Brute (version 2): 
+Optimal : 
 Mein unordered map bnao , usmein jo element ka count 2+ ho wo return krdo simple.
 
 
