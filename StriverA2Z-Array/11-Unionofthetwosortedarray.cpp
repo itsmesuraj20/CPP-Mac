@@ -79,8 +79,6 @@ vector<int> union_Optimal(vector<int> arr1,vector<int> arr2){
     
 }
 
-
-
 int main(){
     vector<int> arr1 = {1,2,3,4,5,5,6};
     vector<int> arr2 = {2,3,3,4,4,5};
