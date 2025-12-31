@@ -65,7 +65,6 @@ void intersection_Optimal(vector<int> arr1, vector<int> arr2)
     }
 }
 
-
 int main(){
     // vector<int> arr1 = {1,2,2,3,4,5,6}; 
     // vector<int> arr2 = {1,2,2,3,4,7,8};
