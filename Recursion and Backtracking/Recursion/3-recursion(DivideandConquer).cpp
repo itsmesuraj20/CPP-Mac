@@ -23,6 +23,7 @@ void bSearch(vector<int> &arr, int low, int right, int target)
     else
         bSearch(arr, low, mid - 1, target);
 }
+
 int main()
 {
     vector<int> arr = {1, 5, 6, 7, 9};
