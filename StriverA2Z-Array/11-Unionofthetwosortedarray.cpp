@@ -57,8 +57,7 @@ vector<int> union_Optimal(vector<int> arr1,vector<int> arr2){
     int i = 0, j = 0;
 
 
-    while(i< n && j<m)0-\
-?>g bcdfxv ̑QA2{
+    while(i< n && j<m){
         if(arr1[i] <= arr2[j]) {
             if(ans.empty() || ans.back() != arr1[i]){
                 ans.push_back(arr1[i]);
