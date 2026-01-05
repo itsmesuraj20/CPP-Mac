@@ -21,10 +21,12 @@ void solve(int n, int source, int destination, int helper)
 
 }
 
+//Quick Revision 
 
 // n s d h  -- function call
 // n-1 s h d tail recursion 1 
 // n-1 h d s tail recursion 2
+
 int main()
 {
     int n;
