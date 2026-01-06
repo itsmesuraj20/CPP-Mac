@@ -24,6 +24,11 @@ void bSearch(vector<int> &arr, int low, int right, int target)
         bSearch(arr, low, mid - 1, target);
 }
 
+void mergeSort(vector<int> &arr , int left , int middle , int right){
+    
+}
+
+
 int main()
 {
     vector<int> arr = {1, 5, 6, 7, 9};
