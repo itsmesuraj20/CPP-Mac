@@ -2,6 +2,7 @@
 using namespace std;
 
 void bSearch(vector<int> &arr, int low, int right, int target)
+
 {
     // Base Case
     if (low > right)
