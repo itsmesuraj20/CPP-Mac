@@ -65,6 +65,7 @@ vector<int> union_Optimal(vector<int> arr1,vector<int> arr2){
             }
             i++;
         }
+        
         else{
            if(ans.empty() || ans.back() != arr2[j]){
                 ans.push_back(arr2[j]);
