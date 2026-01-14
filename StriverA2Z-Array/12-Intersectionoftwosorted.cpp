@@ -7,8 +7,6 @@ arr1[] = {1,2,2,3,4,5}
 arr2[] = {2,2,3,4}
 
 ans_Array [] = {2,2,3,4};
-
-
 */
 
 void intersection_brute(vector<int> arr1,vector<int> arr2)
