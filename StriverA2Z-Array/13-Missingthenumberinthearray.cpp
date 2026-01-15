@@ -14,7 +14,6 @@ ans = 3
 
 void brute_missingnum(vector<int> &arr)
 {
-
     //Remarks : Do Linear Search for each element of the array
 
 
