@@ -7,7 +7,9 @@ Solution - i-> 1 index se chalao , and compare kro previous wale se , bool resul
 and break kr jao . Return the answer.
 
 */
-int main(){
+int main()
+{
+
     int arr1[] = {1,5,6,7,2,3,9};
 
     //This is the method to find the size of the array.
