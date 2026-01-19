@@ -35,7 +35,6 @@ int main()
         result = false;
         break;
        }
-
     }
 
     if(result) 
