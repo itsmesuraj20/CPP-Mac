@@ -30,10 +30,12 @@ int main()
     bool result = true;
     for (int i = 1; i < n; i++)
     {
-       if(!(arr1[i] >= arr1[i-1])){
+       if(!(arr1[i] >= arr1[i-1]))
+       {
         result = false;
         break;
        }
+
     }
 
     if(result) 
