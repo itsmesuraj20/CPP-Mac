@@ -6,8 +6,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void brute_MajorityElement(vector<int> &arr){ // *Revise this 
-    
+void brute_MajorityElement(vector<int> &arr)
+{ // *Revise this 
     int n = arr.size();
     int check = n/2;
     int ans = -1 ;
