@@ -24,7 +24,8 @@ void brute_MajorityElement(vector<int> &arr)
             } ;
     }
     if(ans != -1)
-    cout<<"Ans : " <<ans <<endl; 
+    cout<<"Ans : " <<ans <<endl;
+     
     else
     cout<<"No element available"<<endl;
    
