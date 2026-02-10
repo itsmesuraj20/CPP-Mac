@@ -39,6 +39,7 @@ vector<int> BruteForceRearrange(const vector<int>& arr) {
     }
 
     return result;
+
     
 }
 
