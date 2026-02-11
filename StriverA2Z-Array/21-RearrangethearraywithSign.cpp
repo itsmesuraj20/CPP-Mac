@@ -68,6 +68,7 @@ vector<int> OptimalRearrange(const vector<int>& arr) {
     return result;
 }
 
+
 // Helper function to print array
 void PrintArray(const vector<int>& arr) {
     for (int num : arr) {
