@@ -40,7 +40,6 @@ vector<int> BruteForceRearrange(const vector<int>& arr) {
 
     return result;
 
-
 }
 
 // Optimal approach: O(N) time, O(N) space
