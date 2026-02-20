@@ -44,7 +44,9 @@ vector<int> BruteForceRearrange(const vector<int>& arr) {
 
 // Optimal approach: O(N) time, O(N) space
 // Single pass solution using two pointers
+
 vector<int> OptimalRearrange(const vector<int>& arr) {
+    
     int n = arr.size();
     
     int positive_index = 0;
