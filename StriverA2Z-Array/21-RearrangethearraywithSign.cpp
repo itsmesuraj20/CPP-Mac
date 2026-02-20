@@ -46,7 +46,7 @@ vector<int> BruteForceRearrange(const vector<int>& arr) {
 // Single pass solution using two pointers
 
 vector<int> OptimalRearrange(const vector<int>& arr) {
-    
+
     int n = arr.size();
     
     int positive_index = 0;
@@ -65,15 +65,18 @@ vector<int> OptimalRearrange(const vector<int>& arr) {
     }
 
     return result;
+
 }
 
 
 // Helper function to print array
 void PrintArray(const vector<int>& arr) {
+
     for (int num : arr) {
         cout << num << " ";
     }
     cout << endl;
+    
 }
 
 int main() {
