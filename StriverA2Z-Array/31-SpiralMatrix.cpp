@@ -47,7 +47,6 @@ vector<int> spiralmatrixBuilderFunction(vector<vector<int>> &arr)
             left++;
         }
     }
-
     return ans;
 }
 
