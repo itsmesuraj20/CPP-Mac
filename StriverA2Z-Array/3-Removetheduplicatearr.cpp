@@ -75,6 +75,7 @@ int optimizedMethod_RemoveDuplicates(vector<int> &arr){
 
     return i+1;
 }
+
 vector<int> optimizedMethod_RemoveDuplicatesWithElement(vector<int> &arr) 
 {
     // Edge case: empty array
