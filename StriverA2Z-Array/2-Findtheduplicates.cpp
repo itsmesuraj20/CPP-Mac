@@ -40,7 +40,6 @@ int brute(vi arr){
     return -1;
 }
 
-
 int optimal(vi arr){
     int n = arr.size();
 
