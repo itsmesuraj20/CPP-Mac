@@ -27,7 +27,6 @@ Mein unordered map bnao , usmein jo element ka count 2+ ho wo return krdo simple
 
 */
 
-
 int brute(vi arr){
     int n = arr.size();
     // int ans = -1;
