@@ -61,6 +61,7 @@ int optimal(vi arr){
 }
 
 int main(){
+    
     // vi arr = {5,1,2,3,4,4,9,0};
     vi arr = {2,3,4,5,6,6};
     // vi arr = {1,2,3,4,5};
