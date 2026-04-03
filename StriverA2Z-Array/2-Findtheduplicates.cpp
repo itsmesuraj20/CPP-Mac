@@ -74,6 +74,5 @@ int main(){
     else{
         cout<<"Duplicate Element is : "<< ans ; 
     }
-
     return 0;
 }
