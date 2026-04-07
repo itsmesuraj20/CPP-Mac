@@ -19,9 +19,12 @@ int brute(vector<int>&arr){
     }
     
 }
-
 int better(vector<int>&arr) { 
-
+    int n = arr.size();
+    for (int i = 0; i < count; i++)
+    {
+        /* code */
+    }
 }
 
 int optimal(vector<int>&arr){
