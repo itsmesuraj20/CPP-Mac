@@ -5,8 +5,10 @@ void solve(int n , int source , int destination , int helper){
 
     if(n == 0 ) return ;
 
-    if( n == 1 ) cout<< source << " -> " << destination ; 
-
+    if( n == 1 ) {
+        cout<< source << " -> " << destination ; 
+        return ; 
+    } 
 }
 
 int main(){
