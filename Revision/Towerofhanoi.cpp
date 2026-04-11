@@ -14,10 +14,11 @@ void solve(int n, int source, int destination, int helper) {
 }
 
 int main() {
-    int n = 3;
 
+    int n = 3;
 
     solve(n, 1, 3, 2);
 
     return 0;
+
 }
