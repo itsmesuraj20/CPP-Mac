@@ -9,10 +9,15 @@ void solve(int n , int source , int destination , int helper){
         cout<< source << " -> " << destination ; 
         return ; 
     } 
+
+    solve( n - 1, source , helper , destination )
+    cout<<"Move Disk " << source <<" to " << destination ;
+    solve( n - 1, helper , destination , source);
 }
 
 int main(){
 
+    int n
 
     return 0 ;
 }
