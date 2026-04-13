@@ -18,11 +18,13 @@ int main()
     
     
     else if (arr[mid] == 1) mid++;
-    else {
+    else{
+
         swap(arr[mid] , arr[high]);
         high--;
+        }
     }
-}
+
     for (int i = 0; i < n; i++)
     {
         cout<<arr[i]<< " " ; 
