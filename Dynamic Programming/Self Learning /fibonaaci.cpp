@@ -10,8 +10,10 @@ int fib(int n ){
 }
 
 int main(){
+    
     int n = 10;
 
     cout<<fib(n)<<endl;
     return 0;
+
 }
