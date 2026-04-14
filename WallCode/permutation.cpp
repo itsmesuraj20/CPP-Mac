@@ -19,8 +19,7 @@ void per(int ind , vector<int> num , vector<vector<int>> result){
     }
 }
 
-int main(){
-
-
+int main()
+{
     return 0;
 }
