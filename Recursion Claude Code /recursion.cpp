@@ -6,6 +6,7 @@
     From Zero to Hero - All Patterns, Concepts & Templates
 ===============================================================================
 
+
 TABLE OF CONTENTS:
 Part 1: Recursion Fundamentals (10 Patterns)
 Part 2: Backtracking Fundamentals (8 Patterns)
