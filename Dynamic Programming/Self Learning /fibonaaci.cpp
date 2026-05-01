@@ -11,7 +11,7 @@ int fib(int n ){
     if( n <= 1 ) return n;
 
     return fib(n-1)+fib(n-2);
-    
+
 }
 
 
@@ -40,7 +40,6 @@ int fibTabulation(int n ,vector<int> &dp)
     }
 
     return dp[n];
-
 }
 
 int main(){
@@ -54,5 +53,4 @@ int main(){
     cout<<fibTabulation(n,dp)<<endl;
 
     return 0;
-    
 }
