@@ -11,7 +11,7 @@ int fib(int n ){
     if( n <= 1 ) return n;
 
     return fib(n-1)+fib(n-2);
-    
+
 }
 
 
@@ -24,7 +24,6 @@ int fibMemoization(int n,vector<int> &dp){
     if( dp[n] != -1 ) return dp[n] ;
 
     return dp[n] = fib(n-1,dp)+fib(n-2,dp);
-
 }
 
 int fibTabulation(int n ,vector<int> &dp)
