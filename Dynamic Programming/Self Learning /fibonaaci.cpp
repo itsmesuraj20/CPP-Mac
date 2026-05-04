@@ -51,5 +51,4 @@ int main(){
     cout<<fibTabulation(n,dp)<<endl;
 
     return 0;
-
 }
