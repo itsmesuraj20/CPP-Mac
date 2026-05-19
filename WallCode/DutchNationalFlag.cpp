@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int dutchNationalFlag(vector<int> &arr){
+vector<int> dutchNationalFlag(vector<int> &arr){
 
     int n = arr.size();
 
@@ -23,9 +23,21 @@ int dutchNationalFlag(vector<int> &arr){
         }
     
     }
+
+
+    return arr;
 }
 
 int main(){
 
+    vector<int> arr = {2,1,0,1,0,1,2,1,1,0};
 
+    vector<int> ans = dutchNationalFlag(arr);
+
+    for(int i : ans){
+        cout<< i << " "; 
+    }
+
+
+    return 0;
 }
