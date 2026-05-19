@@ -23,8 +23,6 @@ vector<int> dutchNationalFlag(vector<int> &arr){
         }
     
     }
-
-
     return arr;
 }
 
