@@ -22,7 +22,9 @@ vector<int> dutchalgorithm(vector<int> &arr){
             high--;
         }
     }
+
     return arr;
+    
 }
 
 int main(){
