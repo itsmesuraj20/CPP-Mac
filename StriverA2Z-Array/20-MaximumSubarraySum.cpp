@@ -31,7 +31,6 @@ int brute_MaximumSubArray(vector<int> &arr)
             maxi = max(maxi, sum);
         }
     }
-
     return maxi;
 }
 
