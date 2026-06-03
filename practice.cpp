@@ -1,39 +1,38 @@
+//Dutch algorithm 
+
+
 #include<bits/stdc++.h>
 using namespace std;
-
-vector<int> dutchalgorithm(vector<int> &arr){
+   0          11
+1- 2,0,2,1,1, 0
+2- 
+vector<int> dutchalgo(vector<int> &arr)
+{
     int n = arr.size();
-
-    int low = 0 , mid = 0 , high = n-1;
-
-    while(mid <= high){
-        if(arr[mid] == 0){
-            swap(arr[mid] , arr[low]);
-            low ++;
-            high ++;
+    int low = 0 , high = n-1,mid = 0;
+    
+    while(low < high){
+        if(mid == 0){
+            swap(arr[low] , arr[mid]);
+            low++,mid++;
         }
 
-        else if(arr[mid] == 1){
-            mid++;
-        }
-
-        else {
+        else if(mid == 1){
             swap(arr[mid],arr[high]);
+            low++,mid--;
+        }
+
+        else{
+            swap(arr[mid] ,arr[high]);
             high--;
         }
     }
-
-    return arr;
     
 }
 
+
 int main(){
-    vector<int> arr ={2,1,0,1,2,0,0,1};
 
-    vector<int> ans = dutchalgorithm(arr);
 
-    for(int i : ans ){
-        cout<< i << " ";
-    }
     return 0 ;
 }
