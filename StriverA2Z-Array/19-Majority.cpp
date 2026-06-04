@@ -3,6 +3,8 @@
 
 // Algorithm used : Moore's Voting Algorithm
 
+//Majority Element > n/2
+
 #include<bits/stdc++.h>
 using namespace std;
 
