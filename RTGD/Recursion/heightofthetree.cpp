@@ -16,6 +16,6 @@ int heightofTree(Node *root ,Node *left, Node * ){
     int lh = heightofTree(root ->left);
     int rh = heightofTree (root -> right);
 
-
     return 1 + max(lh,rh);
+    
 }
