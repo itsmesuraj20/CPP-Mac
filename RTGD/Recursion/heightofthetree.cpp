@@ -11,6 +11,7 @@ class Node {
 }
 
 int heightofTree(Node *root ,Node *left, Node * ){
+    
     if(root == Nullptr) return 0;
 
     int lh = heightofTree(root ->left);
