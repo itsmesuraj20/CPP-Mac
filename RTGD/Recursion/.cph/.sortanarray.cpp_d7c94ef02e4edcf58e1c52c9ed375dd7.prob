@@ -1,0 +1,1 @@
+{"name":"Local: sortanarray","url":"/Users/itsmesuraj20/Desktop/C++/RTGD/Recursion/sortanarray.cpp","tests":[{"id":1781778712946,"input":"1 5 0 2","output":"0 1 2 5 "}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/itsmesuraj20/Desktop/C++/RTGD/Recursion/sortanarray.cpp","group":"local","local":true}
