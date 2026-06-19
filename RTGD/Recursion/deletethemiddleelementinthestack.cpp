@@ -23,7 +23,9 @@ void delete(stack<int> &st , int k)
 }
 
 int main(){
+
     stack<int> st;
+    
     st.push(1);
     st.push(2);
     st.push(3);
