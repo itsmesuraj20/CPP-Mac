@@ -1,60 +1,56 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-/*
+//Sort an stack , exactly like sort an array 
 
-st.push() -> add the element
-st.pop() -> mean delete the element
-st.top() -> top most element 
-st.empty() -> Empty the stack
+//st.top();
+//st.empty();
+//st.pop();
+//st.push();
 
-*/
+void insert(stack<int>&st , int temp){
+    if(st.empty() || st.top()<= temp){
+        st.push(temp);
+        return;
+    }
+    
+    int val = st.top();
+    st.pop();
+    
+    insert(st,temp);
+    
+    st.push(val);
+}
 
-void insertFunc(stack<int> &arr , int temp){
-    if(arr.empty() || arr.top() <= temp){
-        arr.push(temp);
+void sortStack(stack<int> &st){
+    
+    if(st.empty()){
         return ;
     }
-
-    int val = arr.top();
-    arr.pop();
-
-    insertFunc(arr,temp);
-
-    arr.push(val);
-}
-
-void stackSort(stack<int> & arr){
     
-    if(arr.empty()){
-        return ;
-    }
-
-    int temp = arr.top();
-    arr.pop();
-
-    stackSort(arr);
-
-    insertFunc(arr,temp);
-}
-
-
-int main(){
-
-    stack<int> s ;
-    s.push(0);
-    s.push(1);
-    s.push(5);
-    s.push(2);
-
-    stackSort(s);
+    int temp = st.top();
     
-    while(!s.empty()){
-
-    cout << s.top() << " ";
-
-    s.pop();
-
+    st.pop();
+    
+    sortStack(st);
+    
+    insert(st,temp);
 }
-    return 0;
+
+int main() {
+    
+	stack<int> st;
+	st.push(0);
+	st.push(1);
+	st.push(5);
+	st.push(2);
+	
+	sortStack(st);
+	
+	while(!st.empty()){
+	    cout<<st.top()<<" ";
+	    st.pop();
+	}
+	
+	return 0;
 }
