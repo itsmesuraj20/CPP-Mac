@@ -1,11 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void insert(){
+void insert(stack<int> &st ,int temp){
+     if(st.empty() || st.top() <= temp){
+        st.push(temp);
+        return ; 
+     }
 
+     int val = st.top();
+     st.pop();
+
+     insert(st,temp);
+
+     st.push(val);
 }
 
-void delete(stack<int> &st , int k)
+void deleteStack(stack<int> &st , int k)
 {
     if(k == 1)
     {
@@ -13,26 +23,33 @@ void delete(stack<int> &st , int k)
         return; 
     }
 
-    int val = st.top();
+    int temp = st.top();
     st.pop();
 
-    delete(st,k-1);
+    deleteStack(st,k-1);
 
-    insert(st);
+    insert(st ,temp);
 
 }
 
 int main(){
 
     stack<int> st;
-    
+
     st.push(1);
     st.push(2);
     st.push(3);
     st.push(4);
     st.push(5);
+    st.push(6);
+    st.push(7);
+    st.push(8);
 
-    delete(st , k);
+    int n = st.size();
+
+    int  k = n / 2  + 1;
+
+    deleteStack(st,k);
 
     while(!st.empty())
     {
