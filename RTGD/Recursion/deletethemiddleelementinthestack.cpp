@@ -29,7 +29,6 @@ void deleteStack(stack<int> &st , int k)
     deleteStack(st,k-1);
 
     insert(st ,temp);
-
 }
 
 int main(){
