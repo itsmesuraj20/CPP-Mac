@@ -1,19 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void insert(stack<int> &st ,int temp){
-     if(st.empty() || st.top() <= temp){
-        st.push(temp);
-        return ; 
-     }
+// void insert(stack<int> &st ,int temp){
+//      if(st.empty() || st.top() <= temp){
+//         st.push(temp);
+//         return ; 
+//      }
 
-     int val = st.top();
-     st.pop();
+//      int val = st.top();
+//      st.pop();
 
-     insert(st,temp);
+//      insert(st,temp); 
 
-     st.push(val);
-}
+//      st.push(val);
+// }
 
 void deleteStack(stack<int> &st , int k)
 {
@@ -28,7 +28,7 @@ void deleteStack(stack<int> &st , int k)
 
     deleteStack(st,k-1);
 
-    insert(st ,temp);
+    ar.
     
 }
 
