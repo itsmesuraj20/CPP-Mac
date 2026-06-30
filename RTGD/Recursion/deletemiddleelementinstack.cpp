@@ -14,7 +14,6 @@ void deleteElement(stack<int> &st , int k ){
     deleteElement(st,k-1);
     
     st.push(top);
-
 }
 
 int main(){
