@@ -29,10 +29,12 @@ int main(){
 
     deleteElement(st,k);
 
-    while(!st.empty()){
+    while(!st.empty())
+    {
 
         cout<<st.top()<<" ";
         st.pop();
+
     }
 
     return 0;
