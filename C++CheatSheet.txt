@@ -5,3 +5,6 @@ Danging Pointer & Nullifying it .
 
 Monotonic Stack 
 Monotonic Queue
+
+
+RTGD : 
