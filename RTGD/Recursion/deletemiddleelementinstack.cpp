@@ -18,6 +18,7 @@ void deleteElement(stack<int> &st , int k ){
 }
 
 int main(){
+
     stack<int> st;
 
     st.push(2);
@@ -38,4 +39,5 @@ int main(){
     }
 
     return 0;
+    
 }

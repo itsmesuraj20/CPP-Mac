@@ -8,7 +8,9 @@ using namespace std;
 //st.pop();
 //st.push();
 
-void insert(stack<int>&st , int temp){
+void insert(stack<int>&st , int temp)
+{
+
     if(st.empty() || st.top()<= temp){
         st.push(temp);
         return;
@@ -20,6 +22,7 @@ void insert(stack<int>&st , int temp){
     insert(st,temp);
     
     st.push(val);
+    
 }
 
 void sortStack(stack<int> &st){
