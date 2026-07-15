@@ -2,12 +2,15 @@
 using namespace std;
 
 int main(){
+    vector<int> arr = {1,2,3}; 
+
     stack<int> st;
 
-    st.push(1);
-    st.push(2);
-    st.push(3);
-    st.push(4);
 
+    //Pushing it arr to stack 
+    for(int i :arr){
+        st.push(i);
+    }
+    
     return 0;
 }
