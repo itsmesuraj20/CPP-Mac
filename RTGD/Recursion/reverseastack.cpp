@@ -17,7 +17,8 @@ void insertStack(stack<int> &st , int temp)
 
 }
 
-void reverseStack(stack<int> &st){
+void reverseStack(stack<int> &st)
+{
 
     if(st.empty()){
         return ;
@@ -27,7 +28,6 @@ void reverseStack(stack<int> &st){
     st.pop();
 
     reverseStack(st);
-
     insertStack(st,topele);
 
 }
@@ -35,9 +35,8 @@ void reverseStack(stack<int> &st){
 int main(){
 
     // vector<int> arr = {1,2,3};
-     
-    vector<int> arr = {3,2,1}; 
-    
+
+    vector<int> arr = {3,2,1};     
     stack<int> st;
 
     //Pushing it arr to stack 
@@ -46,13 +45,10 @@ int main(){
     }
 
     reverseStack(st);
-
     while(!st.empty())
     {
-
         cout<< st.top() << " ";
         st.pop();
-
     }
     
     return 0;
