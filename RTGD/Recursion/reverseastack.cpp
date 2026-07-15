@@ -45,6 +45,7 @@ int main(){
     }
 
     reverseStack(st);
+    
     while(!st.empty())
     {
         cout<< st.top() << " ";
