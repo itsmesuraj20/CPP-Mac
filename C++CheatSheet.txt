@@ -8,3 +8,8 @@ Monotonic Queue
 
 
 RTGD : 
+
+-> Recursion
+-> Tree
+-> Graph
+-> Dynamic Programming
