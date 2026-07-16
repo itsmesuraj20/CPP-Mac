@@ -3,6 +3,8 @@ using namespace std;
 //EkDum correct h , wo array ki wajah se lg raha hai tumhe so dont be confuse 
 //Copy mein bhi dryrun kiya hai 
 
+//Correct version of the recursive 
+
 //Reverse the stack
 void insertfunction(stack<int> &st , int element){
     if(st.empty()){
