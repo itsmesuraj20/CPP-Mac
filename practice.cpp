@@ -1,38 +1,62 @@
-//Dutch algorithm 
-
-
 #include<bits/stdc++.h>
 using namespace std;
-   0          11
-1- 2,0,2,1,1, 0
-2- 
-vector<int> dutchalgo(vector<int> &arr)
-{
-    int n = arr.size();
-    int low = 0 , high = n-1,mid = 0;
-    
-    while(low < high){
-        if(mid == 0){
-            swap(arr[low] , arr[mid]);
-            low++,mid++;
-        }
 
-        else if(mid == 1){
-            swap(arr[mid],arr[high]);
-            low++,mid--;
-        }
+void insertforReversal(stack<int> &st, int top){
 
-        else{
-            swap(arr[mid] ,arr[high]);
-            high--;
-        }
+    if(st.empty()){
+        st.push(top);
+        return ; 
     }
-    
+
+    int topEle = st.top();
+    st.pop();
+
+    insertforReversal(st,top);
+    st.push(topEle);
 }
 
+void reverse(stack<int> &st){
+    
+    if(st.empty()){
+        return ;
+    }
+
+    int top = st.top();
+    st.pop();
+
+    reverse(st);
+    insertforReversal(st,top);
+}
 
 int main(){
+    stack<int> st;
+    st.push(1);
+    st.push(2);
+    st.push(3);
+    st.push(4);
 
+    cout<<"Before"<<endl;
 
-    return 0 ;
+    while(!st.empty()){
+        cout<<st.top()<<" ";
+        st.pop();
+    }
+
+    cout<<"\n";
+
+    st.push(1);
+    st.push(2);
+    st.push(3);
+    st.push(4);
+
+    reverse(st);
+
+    cout<<"After"<<endl;
+
+    while(!st.empty()){
+        cout<<st.top()<<" ";
+        st.pop();
+    }
+
+    return 0;
 }
