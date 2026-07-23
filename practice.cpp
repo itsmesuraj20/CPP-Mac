@@ -1,7 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void insertforReversal(stack<int> &st, int top){
+void insertforReversal(stack<int> &st, int top)
+{
 
     if(st.empty()){
         st.push(top);
@@ -26,6 +27,7 @@ void reverse(stack<int> &st){
 
     reverse(st);
     insertforReversal(st,top);
+
 }
 
 int main(){
