@@ -3,7 +3,6 @@ using namespace std;
 
 void insertforReversal(stack<int> &st, int top)
 {
-
     if(st.empty()){
         st.push(top);
         return ; 
