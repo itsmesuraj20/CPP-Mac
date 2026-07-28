@@ -12,8 +12,7 @@ void insertforReversal(stack<int> &st, int top)
     st.pop();
 
     insertforReversal(st,top);
-    st.push(topEle);
-    
+    st.push(topEle);  
 }
 
 void reverse(stack<int> &st){
