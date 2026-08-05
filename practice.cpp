@@ -27,7 +27,6 @@ void reverse(stack<int> &st)
 
     reverse(st);
     insertforReversal(st,top);
-
 }
 
 int main(){
