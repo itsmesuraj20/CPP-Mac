@@ -60,6 +60,5 @@ int main()
         cout << temp.top() << endl;
         temp.pop();
     }
-
     return 0;
 }
