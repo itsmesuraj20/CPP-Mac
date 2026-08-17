@@ -17,6 +17,7 @@ void insertStack(stack<int> &st, int temp)
     insertStack(st, temp);
 
     st.push(temp_insert);
+    
 }
 void reverse(stack<int> &st)
 {
