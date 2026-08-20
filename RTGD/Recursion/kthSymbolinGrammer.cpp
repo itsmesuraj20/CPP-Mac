@@ -1,20 +1,33 @@
-#include<bits.stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 //https://leetcode.com/problems/k-th-symbol-in-grammar/description/
 // Official question
 
+int solve(int n , int k){
+    if(n == 1 && k == 1){
+        return 0 ;
+    }
+
+    int mid = pow(2,n-1) / 2 ; 
+
+    if(k <= mid ){
+        return solve(n-1,k);
+    }
+
+    else { 
+        return !solve(n-1,k-mid);
+    }
+}
+
+
 int main(){
-    vector<int> arr ;
+    int n , k ;
+    cin>>n>>k;
+    cout<<"Enter N : " << endl;
+    cout<<"Enter K : " << endl;
 
-    stack<int> st;
-
-    st.push(1);
-    st.push(2);
-    st.push(3);
-    st.push(4);
-    st.push(5);
-    
+    cout<<solve(n,k)<<endl;
 
     return 0;
 }
