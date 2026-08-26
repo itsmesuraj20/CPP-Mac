@@ -13,8 +13,10 @@ void solve(int n , char src , char help ,char desti, int &c){
 
 }
 int main(){
+    
     int n = 4 ; 
     int c = 0;
+
     char s = 'a';
     char h = 'b';
     char d = 'c';
