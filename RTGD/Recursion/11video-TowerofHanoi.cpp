@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 void solve(int n , char src , char help ,char desti, int &c){
-//updated a serial number
+//updated a serial number code line
     if(n == 0){
         cout<<endl;
         return;
