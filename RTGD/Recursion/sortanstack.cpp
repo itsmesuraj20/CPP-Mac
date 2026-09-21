@@ -20,7 +20,6 @@ void insert(stack<int>&st , int temp)
     st.pop();
     
     insert(st,temp);
-    
     st.push(val);
     
 }
