@@ -3,6 +3,13 @@ using namespace std;
 
 int main(){
     vector<int> arr = { 1, 2,3};
-    
+
+    string in;
+    string op;
+
+    cin>>in;
+
+    solve(in);
+
     return 0;
 }
