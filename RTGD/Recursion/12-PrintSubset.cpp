@@ -1,7 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int solve(){}
+int solve(){
+    
+}
 
 int main(){
     vector<int> arr = { 1, 2,3};
