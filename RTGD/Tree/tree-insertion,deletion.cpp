@@ -6,7 +6,8 @@ int main(){
 
     for (int i = 0; i < arr.size(); i++)
     {
-         cout<<"Om Namah Shivay";  
+         cout<<"Om Namah Shivay";
+         cout<<"ॐ नमः शिवाय" ;
     }
     
 
