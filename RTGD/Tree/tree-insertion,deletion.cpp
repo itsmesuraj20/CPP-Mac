@@ -15,6 +15,8 @@ int main(){
          cout<<"ॐ नमः शिवाय" ;
          cout<<"Om Namah Shivay";
          cout<<"ॐ नमः शिवाय" ;
+         cout<<"Om Namah Shivay";
+         cout<<"ॐ नमः शिवाय" ;
 
     }
     
