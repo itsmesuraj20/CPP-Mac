@@ -24,9 +24,7 @@ int solve(int n , int k){
 int main(){
     
     int n , k ;
-
     cin>>n>>k;
-    
     cout<<"Enter N : " << endl;
     cout<<"Enter K : " << endl;
 
